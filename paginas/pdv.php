@@ -138,7 +138,9 @@ $resultado_produto = mysqli_query($conn, $result_produto);
         </div>
 
                          <?php
-                        $i = 0;                        
+                        $o = 0;       // 1 - iniciando a variável    
+                        $e = 0;
+                        $a = 0;             
                         ?>
 
         <?php if (($produtonome) and ($produtonome->num_rows != 0)) : ?>
@@ -150,13 +152,19 @@ $resultado_produto = mysqli_query($conn, $result_produto);
                     <?php while ($produtoo = mysqli_fetch_assoc($produtonome)) : ?>
                         
                         
-                        <option value="<?php echo $produtoo['id'] ?>"><?php echo $produtoo['nome_popular'] ?> / <?php echo $produtoo['nome_tecnico'] ?></option>
+                        <option value="<?php echo $produtoo['id'] ?>"><?php echo $produtoo['id'] ?> / <?php echo $produtoo['nome_popular'] ?> / <?php echo $produtoo['nome_tecnico'] ?> - <?php echo $produtoo['preco'] ?></option>
 
 
                         <?php
                         // salvando variável para ser usada pelo JavaScript - IDEAL É FAZER UM FOR CONTADOR COM ARRAY
-                        $varphp[$i] = "R$ ".$produtoo['preco'];
-                        $i++;
+                        $agrupa_id[$a] = $produtoo['id'];
+                        $preco[$e] = "- R$ ".$produtoo['preco']; // 2 - salvando e incrementando
+
+                        $varphp[$o] = "id ".$agrupa_id[$a]." ".$preco[$e];
+                        $o++;
+                        $a++;
+                        $e++;
+
                         ?>
 
 
@@ -170,7 +178,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
 
                         <?php                        
-                        for ($i = 0; $i < count($varphp); $i++){ echo $varphp [$i] . PHP_EOL; }
+                        for ($i = 0; $i < count($varphp); $i++){ echo $varphp [$i] . PHP_EOL; } // 3 - imprimindo
                         ?>
 
 
@@ -251,9 +259,8 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
                 <div class="quadro_funcoes">
                     <p>Adicionar Produto</p>
-                    <p></p>
-                    <p>Cancelar Venda</p>
                     <p>Finalizar Venda</p>
+                    <p>Cancelar Venda</p>
                 </div>
             </div>
         </div>
@@ -393,7 +400,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
 <!-- capturando preço e mandando para imput -->
 <script>
-    var leitura = "<?php echo $varphp[2]; ?>";
+    var leitura = "<?php echo $varphp[0]; ?>";
     document.getElementById("valor_unitario").value = leitura;
     //  alert = document.getElementById("select2--0d-container").value;
     // let url = getElementById('select2--j2-container').innerText;
