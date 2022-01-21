@@ -1,35 +1,29 @@
 # Leia-me #
-
-Esse sistema vem com o desejo de fornecer um GERENCIAMENTO DE ESTOQUE de forma simples e direto, oferecendo um meio genérico que possibilite a venda rápida focada na agilidade que exige um negócio.
+Esse sistema vem com o objetivo de fornecer um GERENCIAMENTO DE ESTOQUE eficiente e principalmente oferecer um meio rápido de saída de vendas focada na agilidade que exige um negócio.
 
 ### Mais sobre ###
-
 * Sumario
 * [Versão](AUTHORIAL)
 * [Leia mais](https://bitbucket.org/tutorials/markdowndemo)
 
 ### Como utilizar? ###
-
 * Baixe o repositório
 * Coloque em sua pasta servidor PHP
 * Inicie o servidor PHP
+* acesse seu servidor PHP
+* [acesse o link](localhost)
 
-* alternativa
-* [acesse o link](www.eumesmo.com)
-
-### Construido com a contribuição de... ###
-
+### Construido com a contribuição de: ###
 * Marcos Lourenço de Souza
 * Guilherme Lourenço de Souza
 
 ### Who do I talk to? ###
-
 * Repo owner or admin
 * Other community or team contact
 
 
 ### VERSION
-1.0
+22.01.21 - 12:17
 
 ### AUTHORIAL
 author: marcos lourenço de souza.
