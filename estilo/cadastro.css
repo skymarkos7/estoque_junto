@@ -1,0 +1,42 @@
+/* não sei onde estiliza
+* {
+    margin: 0 auto;
+    text-align: center;
+}
+
+body {
+    background-color: #2a3964;
+}
+
+form {
+    margin-top: 30px;
+    border: 2px grey solid;
+    border-radius: 25px;
+    height: 500px;
+    width: 500px;
+    background-color: #222E50;
+}
+
+.input {
+    height: 30px;
+    width: 350px;
+    border-radius: 7px;
+}
+
+h2 {
+    color: #fff;
+}
+
+#enviar {
+    height: 50px;
+    width: 100px;
+    margin-left: 350px;
+    margin-top: -65px;
+    border-radius: 55px;
+}
+
+#inicio {
+    position: absolute;
+    margin-left: -210px;
+    margin-top: 45px;
+}
