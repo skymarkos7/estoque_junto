@@ -23,7 +23,7 @@ Esse sistema vem com o objetivo de fornecer um GERENCIAMENTO DE ESTOQUE eficient
 
 
 ### VERSION
-22.01.21 - 12:17
+23.01.21 - 23:58
 
 ### AUTHORIAL
 author: marcos lourenço de souza.

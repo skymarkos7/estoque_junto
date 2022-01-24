@@ -19,7 +19,7 @@ include_once("parte_de_cima.php");
                 </i>
             </div>
             <div>Clientes Cadastrados
-                <div class="page-title-subheading">Todos clientes cadastrados no sistema
+                <div class="page-title-subheading">Clientes cadastrados no sistema
                 </div>
             </div>
         </div>
