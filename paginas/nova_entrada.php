@@ -4,6 +4,7 @@ include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será a
 
 
 
+
 <script>
     function Mudarestado(el) {
         var display = document.getElementById(el).style.display;
@@ -31,6 +32,25 @@ include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será a
 
     }
 </script>
+
+
+<div class="app-page-title">
+    <div class="page-title-wrapper">
+        <div class="page-title-heading">
+            <div class="page-title-icon">
+                <i class="pe-7s-car icon-gradient bg-mean-fruit">
+                    <img class="ilustracao_funcao" src="../img/icone/produtos.png" alt="grafico">
+                </i>
+            </div>
+            <div>Peças no Estoque
+                <div class="page-title-subheading">Peças cadastradas no sistema
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 <form action="" method="POST">
     <div class="tab-content">

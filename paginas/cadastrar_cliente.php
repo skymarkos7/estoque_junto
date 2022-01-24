@@ -3,6 +3,33 @@ include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será a
 ?>
 
 
+
+<!---------------- Título descrevendo a página início------------------------>
+
+<!---------------- Título descrevendo a página início------------------------>
+
+<!-------------- INICIO barra superior com descricao de cada página ------------>
+<div class="app-page-title">
+    <div class="page-title-wrapper">
+        <div class="page-title-heading">
+            <div class="page-title-icon">
+                <i class="pe-7s-car icon-gradient bg-mean-fruit">
+                    <img class="ilustracao_funcao" src="../img/icone/clientes.png" alt="grafico">
+                </i>
+            </div>
+            <div>Clientes
+                <div class="page-title-subheading">Todos clientes cadastrados no sistema
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
 <form action="" method="POST" enctype="multipart/form-data">
     <div class="tab-content">
         <div class="tab-pane tabs-animation fade show active">

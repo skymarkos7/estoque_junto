@@ -17,30 +17,28 @@ session_start(); //inicia uma sessão
     <meta http-equiv="Content-Language" content="pt-br">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Painel de Controless</title>
+    <title>LAP - Lourenço Alto Peças</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
     <meta name="description" content="Página principal do sistema">
     <meta name="msapplication-tap-highlight" content="no">
     <link rel="icon" type="image/jpg" href="img/m.png" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  <!--icones do google - via api--->
     <link href="../estilo/componentes.css" rel="stylesheet"> <!-- para estilizar os demais componentes -->
     <link href="../estilo/main.css" rel="stylesheet"> <!-- estilização da página padrão -->
     <link href="estilo/main.css" rel="stylesheet"> <!-- estilização da página padrão -->
-
-
-
+    <link rel="icon" type="image/jpg" href="../img/five.png" /> <!-- fiveicon -->
 </head>
+
 
 <body>
 
     <!----------------------------------- topo da página, contendo todo o cabeçalho ------------------------------------->
 
 
-
     <div id="menu_retratil" ; class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
         <div class="app-header header-shadow">
             <div class="app-header__logo">
-                <div class="logo-src"></div>
+                <div class="logo-src">Logo Marca</div>
                 <div class="header__pane ml-auto">
                     <div>
                         <button id="muda_botao" ; type="button" onclick="fechar_menu();" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
@@ -158,28 +156,35 @@ session_start(); //inicia uma sessão
                 <div class="scrollbar-sidebar">
                     <div class="app-sidebar__inner">
                         <ul class="vertical-nav-menu">
-                            <li class="app-sidebar__heading">PAINEL DE CONTROLEss</li>
-                            
-                            <li>
-                                
-                            <a href="../index.php" class="mm-active">
+                            <li class="app-sidebar__heading">PAINEL DE CONTROLE                                
+                            </li>                            
+                            <li>                                
+                            <a href="pdv.php" class="mm-active">
                                     <i class="img-painel">
                                     <i class="metismenu-icon pe-7s-diamond">
-                                        <img src="../img/icone/painel.svg" alt="">
+                                        <img src="../img/icone/pdv.png" alt="">
                                     </i>
                                     </i>
-                                    Painel de Controlesss
+                                    PDV
+                                </a>
+                            </li>
+                            <li>                                
+                            <a href="painel_de_controle.php" class="mm-active">
+                                    <i class="img-painel">
+                                    <i class="metismenu-icon pe-7s-diamond">
+                                        <img src="../img/icone/painel.png" alt="">
+                                    </i>
+                                    </i>
+                                    Painel de Controle
                                 </a>
                             </li>
                             <li class="app-sidebar__heading">Funções</li>
                             <li>
-                                <a href="#">
+                            <a href="produtos.php">
                                     <i class="metismenu-icon pe-7s-diamond">
-                                        <i class="metismenu-icon pe-7s-diamond">
-                                            <img src="../img/icone/arrow-up-circle-outline.png" alt="">
-                                        </i>
+                                        <img src="../img/icone/barcode.png" alt="">
                                     </i>
-                                    Entrada
+                                    Produtos
                                     <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                 </a>
                                 <ul>
@@ -190,102 +195,46 @@ session_start(); //inicia uma sessão
                                             <img src="../img/icone/plus-circle-outline.png" alt="">
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="elements-dropdowns.html">
-                                            <i class="metismenu-icon">
-                                            </i><s>Comprar</s>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="elements-icons.html">
-                                            <i class="metismenu-icon">
-                                            </i><s>Pedidos</s>
-                                        </a>
-                                    </li>
                             </li>
                         </ul>
                         </li>
                         <li>
-                            <a href="../paginas/mostrar_produtos.php">
+                            <a href="../paginas/cliente.php">
                                 <i class="metismenu-icon pe-7s-diamond">
                                     <i class="metismenu-icon pe-7s-diamond">
-                                        <img src="../img/icone/arrow-down-circle-outline.png" alt="">
+                                        <img src="../img/icone/clientes.png" alt="">
                                     </i>
                                 </i>
-                                Saída
+                                Clientes
                                 <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                             </a>
                             <ul>
 
                                 <li>
-                                    <a href="nova_saida.php">
+                                    <a href="../paginas/cadastrar_cliente.php">
                                         <i class="metismenu-icon"></i>
                                         Novo
-                                        <img src="../img/icone/minus-circle-outline.png" alt="">
+                                        <img src="../img/icone/plus-circle-outline.png" alt="">
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="elements-badges-labels.html">
-                                        <i class="metismenu-icon">
-                                        </i>comprar
-                                    </a>
-                                </li>
-
                         </li>
                         </ul>
                         </li>
                         <li>
-                            <a href="..\paginas\mostrar_cliente.php">
+                            <a href="..\paginas\relatorios.php">
                                 <i class="metismenu-icon pe-7s-diamond">
                                     <i class="metismenu-icon pe-7s-car">
-                                        <img src="../img/icone/barcode.png" alt="">
+                                        <img src="../img/icone/relatorios.png" alt="">
                                     </i>
                                 </i>
-                                Estoque
+                                Relatorios
                                 <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                             </a>
                             <ul>
                                 <li>
-                                    <a href="../paginas/cadastrar_cliente.php">
+                                    <a href="historico_de_vendas.php">
                                         <i class="metismenu-icon">
-                                        </i>Estoque mínimo
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="components-maps.html">
-                                        <i class="metismenu-icon">
-                                        </i>Estatísticas
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="../paginas/mostrar_usuarios.php">
-                                <i class="metismenu-icon pe-7s-diamond">
-                                    <i class="metismenu-icon pe-7s-car">
-                                        <img src="../img/icone/puzzle-plus.png" alt="">
-                                    </i>
-                                </i>
-                                Cadastrar
-                                <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                            </a>
-                            <ul>
-                                <li>
-                                    <a href="../paginas/cadastrar_cliente.php">
-                                        <i class="metismenu-icon">
-                                        </i>Usuário
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="../paginas/cadastrar_cliente.php">
-                                        <i class="metismenu-icon">
-                                        </i>Cliente
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="../paginas/cadastrar_cliente.php">
-                                        <i class="metismenu-icon">
-                                        </i>Produto
+                                        </i>histórico de vendas
                                     </a>
                                 </li>
                             </ul>
