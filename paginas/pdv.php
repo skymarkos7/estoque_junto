@@ -10,7 +10,5 @@ Está é a página PDV
 
 
 <!-------------- inicio - inclue a parte de baixo da página ------------>
-<?php
-include_once("parte_de_baixo.php"); //inclui o rodapé da página que será apresentada
-?>
+
 <!-------------- fim - inclue a parte de baixo da página ------------>
