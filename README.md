@@ -1,10 +1,13 @@
+
+
+
+
 # Leia-me #
 Esse sistema vem com o objetivo de fornecer um GERENCIAMENTO DE ESTOQUE eficiente e principalmente oferecer um meio rápido de saída de vendas focada na agilidade que exige um negócio.
 
 ### Mais sobre ###
-* Sumario
-* [Versão](AUTHORIAL)
-* [Leia mais](https://bitbucket.org/tutorials/markdowndemo)
+Para acompanhar consulte o resultado hospedado a baixo
+* [acesse aqui](https://loja.lourencoautopecas.com.br/)
 
 ### Como utilizar? ###
 * Baixe o repositório
@@ -16,11 +19,6 @@ Esse sistema vem com o objetivo de fornecer um GERENCIAMENTO DE ESTOQUE eficient
 ### Construido com a contribuição de: ###
 * Marcos Lourenço de Souza
 * Guilherme Lourenço de Souza
-
-### Who do I talk to? ###
-* Repo owner or admin
-* Other community or team contact
-
 
 ### VERSION
 23.01.21 - 23:58
