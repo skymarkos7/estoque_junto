@@ -8,7 +8,6 @@ include_once("parte_de_cima.php");
 
 
 <!---------------- Título descrevendo a página início------------------------>
-
 <div class="app-main__inner">
 
     <div class="app-page-title">
@@ -16,7 +15,7 @@ include_once("parte_de_cima.php");
             <div class="page-title-heading">
                 <div class="page-title-icon">
                     <i class="pe-7s-car icon-gradient bg-mean-fruit">
-                        <img class="ilustracao_funcao" src="../img/icone/painel.png" alt="painel de controle">
+                        <img class="ilustracao_funcao" src="../img/icone/relatorio-de-negocios.png" alt="painel de controle">
                     </i>
                 </div>
                 <div>Relatórios
@@ -27,7 +26,7 @@ include_once("parte_de_cima.php");
         </div>
     </div>
 </div>
-
+<!---------------- Título descrevendo a página Fimn ------------------------>
 
 
 

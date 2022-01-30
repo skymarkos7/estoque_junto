@@ -15,7 +15,7 @@ include_once("parte_de_cima.php");
         <div class="page-title-heading">
             <div class="page-title-icon">
                 <i class="pe-7s-car icon-gradient bg-mean-fruit">
-                    <img class="ilustracao_funcao" src="../img/icone/clientes.png" alt="grafico">
+                    <img class="ilustracao_funcao" src="../img/icone/clientes-descricao.png" alt="grafico">
                 </i>
             </div>
             <div>Clientes Cadastrados
