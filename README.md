@@ -14,7 +14,7 @@ Para acompanhar consulte o resultado hospedado a baixo
 * Coloque em sua pasta servidor PHP
 * Inicie o servidor PHP
 * acesse seu servidor PHP
-* [acesse o link](localhost)
+* [acesse o localhost](https://localhost)
 
 ### Construido com a contribuição de: ###
 * Marcos Lourenço de Souza
