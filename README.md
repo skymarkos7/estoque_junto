@@ -1,7 +1,5 @@
 
 
-
-
 # Leia-me #
 Esse sistema vem com o objetivo de fornecer um GERENCIAMENTO DE ESTOQUE eficiente e principalmente oferecer um meio rápido de saída de vendas focada na agilidade que exige um negócio.
 
