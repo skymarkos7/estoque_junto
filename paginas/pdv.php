@@ -9,8 +9,6 @@ include_once("parte_de_cima.php");
 
 
 
-
-
     <div class="top_pdv">
 
         <div class="estado_caixa">
@@ -21,20 +19,20 @@ include_once("parte_de_cima.php");
 
             <div class="numero_venda">
 
-                <p>Nr. Venda:</p>
+                <p>Nr. Venda: </p>
                 <input type="text" name="numero_venda">
 
             </div>
 
             <div class="data_venda">
 
-                <p>Data Venda:</p>
+                <p>Data Venda: </p>
                 <input type="text" name="data_venda">
 
             </div>
 
             <div class="cliente_venda">                      
-                <p>Cliente:</p>
+                <p>Cliente: </p>
                 <input type="text" name="cliente_venda">
 
             </div>

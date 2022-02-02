@@ -150,3 +150,367 @@ input:checked+.slider:before {
     text-decoration: none;
 }
 
+.tela_pdv{
+    margin: 0;
+    padding: 0;
+
+    height: 700px;
+}
+
+.top_pdv{
+    width: 99%;
+    height: 80px;
+    background-color: #232F7F;
+}
+
+.estado_caixa{
+         float: left;    
+    width: 70%;
+    height: 40px;
+
+}
+
+        .estado_caixa p{
+            text-align: center;
+            line-height: 40px;
+            color:red;
+            font-size: 20px;
+
+        }
+
+
+.parte_dentro_top{
+    float: left;
+    width: 70%;
+    height: 40px;
+    background-color: #fff;   
+   border-top-right-radius: 50px;
+}
+
+.horario_pdv{
+   
+      float: left;
+      width: 30%;
+      height: 40px;
+      margin-top:-40px;
+}
+
+            .horario_pdv p{
+                color:#FF7733;
+               text-align: center;
+               line-height: 80px;
+               font-size: 22px;
+            }
+            
+.numero_venda, .data_venda, .cliente_venda{
+    width: 33%;
+    
+    margin-top: 10px;
+    float: left;   
+    
+}
+.numero_venda p, .data_venda p, .cliente_venda p{
+    font-size: 14px;
+    float: left;   
+    
+}
+.numero_venda input, .data_venda input, .cliente_venda input{
+    border-color: #ddd;
+     border-radius: 4px;
+     box-shadow: 0 0 0 0;
+     outline: 0;     
+     text-align: center;
+       
+    
+}
+
+.numero_venda input{
+    width: 33%;
+  
+}
+.data_venda input{
+    width: 33%;
+  
+}
+.cliente_venda input{
+      width: 33%px;
+    
+}
+
+.parte_busca_pdv{
+   
+    margin-top: 10px;
+    height: 110px;
+    width: 100%;
+    
+}
+
+.quantidade_item_pdv,.descrição_item_pdv{
+    float: left;
+    
+    
+}
+.quantidade_item_pdv input,.descrição_item_pdv input{
+   background-color: #232F7F;
+   border:0;
+   outline: none;
+   text-align: center;
+   color:#fff;
+   height: 80px;
+   border-radius: 4px;
+    width: 100%;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+
+.quantidade_item_pdv {
+    width: 10%;
+    margin-left: 3px;
+
+    
+}
+.descrição_item_pdv {
+   margin-left: 6px;
+    width: 88%;
+
+}
+
+.quantidade_item_pdv p{
+    font-size: 18px;
+    
+}
+.descrição_item_pdv p{
+    font-size: 18px;
+    
+}
+
+.duas_parte_corpo_pdv{
+       width: 100%;
+        margin-bottom: 30px;
+       height: 500px;
+}
+
+.corpo_pdv_esquerda,.corpo_pdv_direita{
+margin-left:  10px;
+    width: 49%;
+   
+    height: 100%;
+    float: left;
+
+
+}
+
+
+.imagem_produto_pdv,.codigo_e_valor{
+    float: left;
+    margin-left: 5px;
+    height: 190px;    
+    
+  
+}
+
+
+
+.imagem_produto_pdv{
+ 
+    width: 40%;
+    margin-top: 20px;
+    
+}
+.codigo_e_valor{
+    width: 54%;
+    
+}
+
+.codigo_produto_pdv, .valor_produto_pdv{
+  
+    width: 100%;
+    height: 50%;
+    margin-top: 5px;
+ 
+}
+
+
+.imagem_produto_pdv_quadro{
+    margin-top: 5px;
+    width: 200px;
+    height: 180px;
+    background-color: #fff;
+    border-radius: 15px;
+    border:1px solid #ccc;
+}
+
+
+.imagem_produto_pdv_quadro img{
+    width: 87%;
+    margin-left: 10px;
+}
+
+
+.codigo_produto_pdv input, .valor_produto_pdv input{
+    
+    width: 100%;
+   height: 60px;
+    border-radius: 8px;
+    border-color: #fff;
+    outline: 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.codigo_produto_pdv p, .valor_produto_pdv p{
+    font-size: 20px;
+}
+
+.formas_de_pagamentos_e_outros{
+    float: left;
+    
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.forma1 input, .forma2 input{
+    height: 25px;
+    border-radius: 4px;
+    border-color: #ccc;
+    outline: 0;
+    text-align: center;
+}
+
+.forma_input1{
+    width: 30%;
+}
+.forma_input2{
+    width: 40%;
+}
+
+.vendedoretotais{
+    margin-top: 15px;
+    height: 20px;
+   
+}
+
+.vendedoretotais input{
+    width: 20%;
+    border-radius: 4px;
+    border-color: #ccc;
+    outline: 0;
+    text-align: center;
+}
+
+.qtde_input{
+    width: 50px;
+}
+
+
+.tres_quadros{
+      margin-top: 20px;
+    height: 130px;
+    background-color: #eee;
+    float: left;
+    width: 100%;
+}
+
+
+.quadro_atalhos1,.quadro_atalhos2,.quadro_funcoes{
+    margin-left: 5px;
+    float: left;
+     background-color: #232F7F;
+     height: 125px;
+}
+
+.quadro_atalhos1{
+    width: 29%;
+    border-radius: 10px;
+}
+.quadro_atalhos2{
+     width: 39%;
+      border-radius: 10px;
+}
+
+.quadro_funcoes{
+      width: 29%;
+      background-color: #fff;
+}
+
+.quadro_funcoes p{
+    text-align: center;
+    color:#fff;
+    font-size: 16px;
+    padding: 4px;
+   
+    background-color: #232F7F;
+    border-radius: 4px;
+}
+
+.quadro_atalhos1 p{
+    cursor: pointer;
+    color:#fff;
+    font-size: 16px;
+    text-align: center;
+}
+.quadro_atalhos2 p{
+    cursor: pointer;
+    color:#fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+.lista_itens_pdv{
+    border:1px solid #000;
+    width: 98%;
+    height: 300px;
+    float: left;
+  
+}
+
+
+
+.total_liquido_pdv {
+    
+}
+.total_liquido_pdv p{
+     
+}
+.total_liquido_pdv input{
+    border-radius: 8px;
+    outline: 0;
+    border-color: #ccc;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+
+.total_pago_pdv {
+    margin-top: 15px;
+    margin-left: 5px;
+    width: 49%;
+    float: left;
+
+   
+}
+.total_pago_pdv input{
+    border-radius: 8px;
+    height: 45px;
+  float: left;
+    width: 100%;
+     outline: 0;
+
+border-color: #ccc;
+font-size: 22px;
+text-align: center;
+}
+
+.lista_itens_pdv table{
+    width: 100%;
+    text-align: center;
+}
+.lista_itens_pdv table th{
+   background-color: #EDEDED;
+}
