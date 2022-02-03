@@ -150,6 +150,12 @@ input:checked+.slider:before {
     text-decoration: none;
 }
 
+
+/* ----------------  PDV COMEÇA AQUI -------*/
+
+
+
+
 .tela_pdv{
     margin: 0;
     padding: 0;
@@ -514,3 +520,7 @@ text-align: center;
 .lista_itens_pdv table th{
    background-color: #EDEDED;
 }
+
+
+/* PDV TERMINA AQUI */
+/* VISUAL CODE É UM LIXOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO*/

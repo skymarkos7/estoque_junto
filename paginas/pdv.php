@@ -236,7 +236,7 @@ include_once("parte_de_cima.php");
     </div>
 
 
-BOSTA RUIM DE ENVIAR
+    <!-- VISUAL CODE É UM LIXOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO --->
 
 
 
