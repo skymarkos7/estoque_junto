@@ -26,8 +26,8 @@
     border: 1px solid #ccc;
 }
 
-.quadros{
-    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%) !important; 
+.quadros {
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%) !important;
 }
 
 
@@ -162,23 +162,20 @@ input:checked+.slider:before {
     margin: 0;
     padding: 0;
     height: 700px;
-    
 }
 
 .top_pdv {
     width: 99%;
     height: 80px;
     background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%) !important;
-    
     border-top-right-radius: 20px;
 }
 
 .estado_caixa {
     float: left;
     width: 70%;
-    height: 40px;    
+    height: 40px;
     font-weight: bold;
-    
 }
 
 .estado_caixa p {
@@ -193,8 +190,6 @@ input:checked+.slider:before {
     width: 70%;
     height: 40px;
     background-color: #fff;
-    
-    
 }
 
 .horario_pdv {
@@ -202,7 +197,6 @@ input:checked+.slider:before {
     width: 30%;
     height: 40px;
     margin-top: -40px;
-    
 }
 
 .horario_pdv p {

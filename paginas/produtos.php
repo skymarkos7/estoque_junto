@@ -20,8 +20,6 @@ include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será a
             </div>
         </div>
 
-
-
         <!--   Barra de Pesquisa ------>
 
         <div class="container">
@@ -33,14 +31,25 @@ include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será a
             </div>
         </div>
 
+        <div class="visualizar-por">
+            Visualizar por
+            <div class="lista">
+                <img class="ilustracao_funcao" src="../img/icone/format-list.png" alt="grafico">
+            </div>
+
+            <div class="grade">
+                <img class="ilustracao_funcao" src="../img/icone/format-grade.png" alt="grafico">
+            </div>
+        </div>
 
 
     </div>
 </div>
 
 
-<script>  // FUNÇÃO PARA ACIONAR O ESTILO VARIÁVEL DA BARRA DE PESQUISA
-    function pesquisa_aberta() {  
+<script>
+    // FUNÇÃO PARA ACIONAR O ESTILO VARIÁVEL DA BARRA DE PESQUISA
+    function pesquisa_aberta() {
         const elemento = document.getElementById('barra_pesquisa'); // busca pelo id "barra_pesquisa"
         elemento.classList.toggle('pesquisa_focada'); //adiciona e remove a casse "pesquisa_focada"
     }
@@ -51,10 +60,11 @@ include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será a
 
 <div class="tab-pane tabs-animation fade show active">
     <div id="mostrar_produto" class="container flex">
-        <span id="conteudo"></span> 
+        <span id="conteudo"></span>
     </div>
 </div>
-<script> // TRAZER A LISTAGEM DOS PRODUTOS DA OUTRA PÁGINA E COLOCAR NA SPAN "conteudo"
+<script>
+    // TRAZER A LISTAGEM DOS PRODUTOS DA OUTRA PÁGINA E COLOCAR NA SPAN "conteudo"
     $(document).ready(function() {
         $.post('../banco/listar_produtos.php', function(retorna) {
             //Subtitui o valor no seletor id="conteudo"

@@ -41,8 +41,7 @@ include_once("parte_de_cima.php");
 
 
 
-        <script>
-		
+        <script>		
         function relogio(){
             var data=new Date();
             var hor=data.getHours();
@@ -63,9 +62,7 @@ include_once("parte_de_cima.php");
             
             document.getElementById("hora").value=horas;
         }
-
         var timer=setInterval(relogio,1000);
-
     </script>
 
 
@@ -116,7 +113,7 @@ include_once("parte_de_cima.php");
             <div class= "codigo_e_valor">
 
                 <div class="codigo_produto_pdv">
-                    <p>Código Barras</p>
+                    <p>Nome do Produto</p>
                     <input type="text" name="codigo_produto_pdv">
                 </div>
 

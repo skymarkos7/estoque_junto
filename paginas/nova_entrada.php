@@ -66,12 +66,12 @@ include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será a
 
                         <div class="col-md-6">
                             <div class="position-relative form-group">
-                                <input type="text" class="form-control " name="nome_tecnico" placeholder="Nome Tecnico" id="">
+                                <input type="text" class="form-control " name="nome_tecnico" placeholder="Nome Técnico" id="">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="position-relative form-group">
-                                <input type="text" class="form-control" name="referencia" placeholder="Referencia" id="">
+                                <input type="text" class="form-control" name="referencia" placeholder="Referência" id="">
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -86,12 +86,12 @@ include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será a
                         </div>
                         <div class="col-md-6">
                             <div class="position-relative form-group">
-                                <input type="text" class="form-control" name="aplicacao" placeholder="Aplicacao" id="">
+                                <input type="text" class="form-control" name="aplicacao" placeholder="Veículos Compatíveis" id="">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="position-relative form-group">
-                                <input type="text" class="form-control" name="preco" placeholder="Preco" id="">
+                                <input type="text" class="form-control" name="preco" placeholder="Preço" id="">
                             </div>
                         </div>
                         <div class="col-md-6">
