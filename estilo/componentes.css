@@ -155,6 +155,12 @@ input:checked+.slider:before {
     text-decoration: none;
 }
 
+.visualizar {
+    float: right;
+    width: 100px;
+    display: inline-flex;
+}
+
 
 /* ----------------  PDV COMEÇA AQUI -------*/
 
