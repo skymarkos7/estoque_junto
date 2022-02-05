@@ -158,12 +158,15 @@ input:checked+.slider:before {
     margin: 0;
     padding: 0;
     height: 700px;
+    
 }
 
 .top_pdv {
     width: 99%;
     height: 80px;
     background-color: #232F7F;
+    
+    border-top-right-radius: 20px;
 }
 
 .estado_caixa {
@@ -171,6 +174,7 @@ input:checked+.slider:before {
     width: 70%;
     height: 40px;    
     font-weight: bold;
+    
 }
 
 .estado_caixa p {
@@ -185,7 +189,8 @@ input:checked+.slider:before {
     width: 70%;
     height: 40px;
     background-color: #fff;
-    border-top-right-radius: 50px;
+    
+    
 }
 
 .horario_pdv {
@@ -193,6 +198,7 @@ input:checked+.slider:before {
     width: 30%;
     height: 40px;
     margin-top: -40px;
+    
 }
 
 .horario_pdv p {
