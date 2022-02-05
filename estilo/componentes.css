@@ -169,7 +169,8 @@ input:checked+.slider:before {
 .estado_caixa {
     float: left;
     width: 70%;
-    height: 40px;
+    height: 40px;    
+    font-weight: bold;
 }
 
 .estado_caixa p {
