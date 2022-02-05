@@ -262,7 +262,7 @@ input:checked+.slider:before {
 
 .quantidade_item_pdv input,
 .descrição_item_pdv input {
-    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%) !important;
+    background-color: #232F7F;
     border: 0;
     outline: none;
     text-align: center;
