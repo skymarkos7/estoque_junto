@@ -26,6 +26,10 @@
     border: 1px solid #ccc;
 }
 
+.quadros{
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%) !important; 
+}
+
 
 /* --------------------   estilo dos check-box swith do formulario no cadastro de produtos  -------------------- */
 
@@ -164,7 +168,7 @@ input:checked+.slider:before {
 .top_pdv {
     width: 99%;
     height: 80px;
-    background-color: #232F7F;
+    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%) !important;
     
     border-top-right-radius: 20px;
 }
@@ -258,7 +262,7 @@ input:checked+.slider:before {
 
 .quantidade_item_pdv input,
 .descrição_item_pdv input {
-    background-color: #232F7F;
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%) !important;
     border: 0;
     outline: none;
     text-align: center;
@@ -508,15 +512,16 @@ input:checked+.slider:before {
     font-weight: bold;
     font-size: 25px;
     width: 130px;
-    background-color: #232F7F;
+    background-color: #2b5876;
     border: 0 none;
 }
 
 .horario_pdv {
     text-align: center;
     margin-top: -1%;
-    background-color: #232F7F;
+    background-color: #2b5876;
     text-decoration: none;
+    border-radius: 20px;
 }
 
 

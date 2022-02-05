@@ -159,7 +159,7 @@ include_once("parte_de_cima.php");
 
             <div class="tres_quadros">
                 
-                        <div class="quadro_atalhos1">
+                        <div class="quadros quadro_atalhos1">
                             <p>Aplicar Desconto</p>
                             <p>Nova venda</p>
                             <p>Localizar Produto</p>
@@ -169,7 +169,7 @@ include_once("parte_de_cima.php");
                             <p>Alterar Qtde</p>
                         </div>
                 
-                        <div class="quadro_atalhos2">
+                        <div class="quadros quadro_atalhos2">
                             <p>Imprimir cupom</p>
                             <p>Imprimir cupom maior</p>
                             <p>Localizar Venda</p>
@@ -179,7 +179,7 @@ include_once("parte_de_cima.php");
                             <p>Pesquisar Produto</p>
                         </div>
                 
-                        <div class="quadro_funcoes">
+                        <div class="quadros quadro_funcoes">
                             <p>Nova Venda</p>
                             <p>Finalizar Venda</p>
                             <p>tela vendas completa</p>
