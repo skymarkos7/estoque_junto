@@ -522,5 +522,29 @@ text-align: center;
 }
 
 
+
+/*--------------------------------início estilo da hora ---------------------------------------*/
+#hora{
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    font-size: 25px;
+    width: 130px;
+    background-color: #232F7F;    
+    border: 0 none;
+}
+.horario_pdv{
+    text-align: center; 
+    margin-top:-1% ;
+    background-color: #232F7F;
+    text-decoration: none;
+}
+/*--------------------------------Fim estilo da hora ---------------------------------------*/
+
+
+
+
+
+
+
 /* PDV TERMINA AQUI */
-/* VISUAL CODE É UM LIXOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO*/

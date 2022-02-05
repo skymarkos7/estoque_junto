@@ -40,20 +40,6 @@ include_once("parte_de_cima.php");
         </div>
 
 
-<style>
-#hora{
-    text-align: center;
-    color: #0f0;
-    font-weight: bold;
-    font-size: 25px;
-    width: 130px;
-    background-color: black;
-}
-
-</style>
-
-
-
 
         <script>
 		
