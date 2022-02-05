@@ -257,7 +257,7 @@ input:checked+.slider:before {
     text-align: center;
     color: #fff;
     height: 80px;
-    border-radius: 4px;
+    border-radius: 12px;
     width: 100%;
     font-size: 25px;
     text-transform: uppercase;
