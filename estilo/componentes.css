@@ -262,7 +262,7 @@ input:checked+.slider:before {
 
 .quantidade_item_pdv input,
 .descrição_item_pdv input {
-    background-color: #232F7F;
+    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%) !important;
     border: 0;
     outline: none;
     text-align: center;

@@ -179,7 +179,7 @@ include_once("parte_de_cima.php");
                             <p>Pesquisar Produto</p>
                         </div>
                 
-                        <div class="quadros quadro_funcoes">
+                        <div class="quadro_funcoes">
                             <p>Nova Venda</p>
                             <p>Finalizar Venda</p>
                             <p>tela vendas completa</p>
