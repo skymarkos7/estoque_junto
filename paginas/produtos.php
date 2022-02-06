@@ -11,7 +11,7 @@ include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será a
         <div class="page-title-heading">
             <div class="page-title-icon">
                 <i class="pe-7s-car icon-gradient bg-mean-fruit">
-                    <img class="ilustracao_funcao" src="../img/icone/produtos.png" alt="grafico">
+                <img src="https://img.icons8.com/nolan/64/air-suspension-warning.png"/>
                 </i>
             </div>
             <div>Peças no Estoque

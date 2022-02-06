@@ -15,11 +15,11 @@ include_once("parte_de_cima.php");
             <div class="page-title-heading">
                 <div class="page-title-icon">
                     <i class="pe-7s-car icon-gradient bg-mean-fruit">
-                        <img class="ilustracao_funcao" src="../img/icone/relatorio-de-negocios.png" alt="painel de controle">
+                    <img src="https://img.icons8.com/nolan/64/file.png"/>
                     </i>
                 </div>
                 <div>Relatórios
-                    <div class="page-title-subheading">Visão Geral
+                    <div class="page-title-subheading">Histórico de vendas
                     </div>
                 </div>
             </div>

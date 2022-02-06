@@ -13,7 +13,7 @@ include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será a
             <div class="page-title-heading">
                 <div class="page-title-icon">
                     <i class="pe-7s-car icon-gradient bg-mean-fruit">
-                        <img class="ilustracao_funcao" src="../img/icone/painel-simbolo.png" alt="painel de controle">
+                    <img src="https://img.icons8.com/nolan/64/control-panel.png"/>
                     </i>
                 </div>
                 <div>Painel de Controle
@@ -104,8 +104,8 @@ include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será a
                                                         <img width="42" class="rounded-circle" src="assets/images/avatars/9.jpg" alt="">
                                                     </div>
                                                     <div class="widget-content-left">
-                                                        <div class="widget-heading">Ella-Rose Henry</div>
-                                                        <div class="widget-subheading">Web Developer</div>
+                                                        <div class="widget-heading">junta homocinética</div>
+                                                        <div class="widget-subheading">Ella-Rose Henry</div>
                                                     </div>
                                                     <div class="widget-content-right">
                                                         <div class="font-size-xlg text-muted">
@@ -126,8 +126,8 @@ include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será a
                                                         <img width="42" class="rounded-circle" src="assets/images/avatars/5.jpg" alt="">
                                                     </div>
                                                     <div class="widget-content-left">
-                                                        <div class="widget-heading">Ruben Tillman</div>
-                                                        <div class="widget-subheading">UI Designer</div>
+                                                        <div class="widget-heading">bateria moura 60A</div>
+                                                        <div class="widget-subheading">Ruben Tillman</div>
                                                     </div>
                                                     <div class="widget-content-right">
                                                         <div class="font-size-xlg text-muted">
@@ -148,8 +148,8 @@ include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será a
                                                         <img width="42" class="rounded-circle" src="assets/images/avatars/4.jpg" alt="">
                                                     </div>
                                                     <div class="widget-content-left">
-                                                        <div class="widget-heading">Vinnie Wagstaff</div>
-                                                        <div class="widget-subheading">Java Programmer</div>
+                                                        <div class="widget-heading">parafuso</div>
+                                                        <div class="widget-subheading">Vinnie Wagstaff</div>
                                                     </div>
                                                     <div class="widget-content-right">
                                                         <div class="font-size-xlg text-muted">
@@ -170,8 +170,8 @@ include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será a
                                                         <img width="42" class="rounded-circle" src="assets/images/avatars/3.jpg" alt="">
                                                     </div>
                                                     <div class="widget-content-left">
-                                                        <div class="widget-heading">Ella-Rose Henry</div>
-                                                        <div class="widget-subheading">Web Developer</div>
+                                                        <div class="widget-heading">spray grafite</div>
+                                                        <div class="widget-subheading">Ella-Rose Henry</div>
                                                     </div>
                                                     <div class="widget-content-right">
                                                         <div class="font-size-xlg text-muted">
@@ -192,8 +192,8 @@ include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será a
                                                         <img width="42" class="rounded-circle" src="assets/images/avatars/2.jpg" alt="">
                                                     </div>
                                                     <div class="widget-content-left">
-                                                        <div class="widget-heading">Ruben Tillman</div>
-                                                        <div class="widget-subheading">UI Designer</div>
+                                                        <div class="widget-heading">troca de óleo</div>
+                                                        <div class="widget-subheading">Ruben Tillman</div>
                                                     </div>
                                                     <div class="widget-content-right">
                                                         <div class="font-size-xlg text-muted">

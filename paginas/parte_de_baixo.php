@@ -7,7 +7,7 @@
             <div class="app-footer-left">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a href="https://www.facebook.com/654.asd.gfwfw/" class="nav-link">
+                        <a href="https://www.linkedin.com/in/marcos-louren%C3%A7o-20a041141/ class="nav-link">
                             Copyright© 2020 - Marcos Lourenço de Souza
                         </a>
                     </li>

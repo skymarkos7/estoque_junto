@@ -14,11 +14,11 @@ include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será a
         <div class="page-title-heading">
             <div class="page-title-icon">
                 <i class="pe-7s-car icon-gradient bg-mean-fruit">
-                    <img class="ilustracao_funcao" src="../img/icone/clientes.png" alt="grafico">
+                <img src="https://img.icons8.com/nolan/64/add-user-group-man-man.png"/>
                 </i>
             </div>
             <div>Clientes
-                <div class="page-title-subheading">Todos clientes cadastrados no sistema
+                <div class="page-title-subheading">Adicionar clientes ao sistema
                 </div>
             </div>
         </div>
