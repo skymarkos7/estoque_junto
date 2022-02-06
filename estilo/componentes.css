@@ -156,9 +156,10 @@ input:checked+.slider:before {
 }
 
 .visualizar {
-    float: right;
+    float:inline-end;
     width: 100px;
     display: inline-flex;
+    padding-left: 110px ;
 }
 
 
@@ -501,6 +502,10 @@ input:checked+.slider:before {
 
 .lista_itens_pdv table th {
     background-color: #EDEDED;
+}
+
+.pesquisa{
+    margin-left: 20%;
 }
 
 

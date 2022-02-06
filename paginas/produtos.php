@@ -22,7 +22,7 @@ include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será a
 
         <!--   Barra de Pesquisa ------>
 
-        <div class="container">
+        <div class="pesquisa">
             <div class="d-flex justify-content-center h-100">
                 <div class="searchbar">
                     <input onfocus="pesquisa_aberta()" class=" search_input" type="text" name="" id="barra_pesquisa" placeholder="Pesquisar...">
@@ -32,9 +32,9 @@ include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será a
         </div>
 
         <div id="visualizacao">
-        Visualizar por:
+        
         <div id="visualizar" class="visualizar">
-            
+        Visualizar por:
             <div class="lista">
                 <img class="ilustracao_funcao" src="../img/icone/format-list.png" alt="grafico">
             </div>
