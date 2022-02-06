@@ -160,7 +160,7 @@ input:checked+.slider:before {
 .visualizar {
     position:absolute;
     margin-left: 90%;
-    width: 200px;
+    width: 140px;
     float: right;
     margin-top: 100px;
     
