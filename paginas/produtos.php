@@ -31,10 +31,13 @@ include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será a
             </div>
         </div>
 
-        <div id="visualizacao">
         
-        <div id="visualizar" class="visualizar">
-        Visualizar por:
+        
+
+        <div class="visualizar">
+            
+              <p>  Visualizar por: </p>
+
             <div class="lista">
                 <img class="ilustracao_funcao" src="../img/icone/format-list.png" alt="grafico">
             </div>
@@ -42,10 +45,10 @@ include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será a
             <div class="grade">
                 <img class="ilustracao_funcao" src="../img/icone/format-grade.png" alt="grafico">
             </div>
-        </div>
-        </div>
+     
+        
 
-
+        </div>
     </div>
 </div>
 
