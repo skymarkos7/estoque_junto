@@ -22,7 +22,8 @@ session_start(); //inicia uma sessão
     <meta name="description" content="Página principal do sistema">
     <meta name="msapplication-tap-highlight" content="no">
     <link rel="icon" type="image/jpg" href="img/m.png" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  <!--icones do google - via api--->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--icones do google - via api--->
     <link href="../estilo/componentes.css" rel="stylesheet"> <!-- para estilizar os demais componentes -->
     <link href="../estilo/main.css" rel="stylesheet"> <!-- estilização da página padrão -->
     <link href="estilo/main.css" rel="stylesheet"> <!-- estilização da página padrão -->
@@ -156,31 +157,36 @@ session_start(); //inicia uma sessão
                 <div class="scrollbar-sidebar">
                     <div class="app-sidebar__inner">
                         <ul class="vertical-nav-menu">
-                            <li class="app-sidebar__heading">PAINEL DE CONTROLE                                
-                            </li>                            
-                            <li>                                
-                            <a href="pdv.php" class="mm-active">
+                            <li class="app-sidebar__heading">PAINEL DE CONTROLE
+                            </li>
+                            <li>
+                                <a id="seleciona_pdv" href="pdv.php" class="">
                                     <i class="img-painel">
-                                    <i class="metismenu-icon pe-7s-diamond">
-                                        <img src="../img/icone/pdv.png" alt="">
-                                    </i>
+                                        <i class="metismenu-icon pe-7s-diamond">
+                                            <img src="../img/icone/pdv.png" alt="">
+                                        </i>
                                     </i>
                                     PDV
                                 </a>
                             </li>
-                            <li>                                
-                            <a href="painel_de_controle.php" class="mm-active">
+                            <li>
+                                <a id="seleciona_painel" href="painel_de_controle.php">
                                     <i class="img-painel">
-                                    <i class="metismenu-icon pe-7s-diamond">
-                                        <img src="../img/icone/painel.png" alt="">
-                                    </i>
+                                        <i class="metismenu-icon pe-7s-diamond">
+                                            <img src="../img/icone/painel.png" alt="">
+                                        </i>
                                     </i>
                                     Painel de Controle
                                 </a>
                             </li>
                             <li class="app-sidebar__heading">Funções</li>
                             <li>
-                            <a href="produtos.php">
+                            
+                            <!---------  Prepara para marcar o menu selecionado ---------> 
+                                <a id="seleciona_produto" type="button" ; class="" href="produtos.php">
+                          <!---------  Prepara para marcar o menu selecionado ---------> 
+
+                    
                                     <i class="metismenu-icon pe-7s-diamond">
                                         <img src="../img/icone/barcode.png" alt="">
                                     </i>
@@ -189,8 +195,8 @@ session_start(); //inicia uma sessão
                                 </a>
                                 <ul>
                                     <li>
-                                        <a href="nova_entrada.php">
-                                            <i class="metismenu-icon"></i>                                            
+                                        <a id="seleciona_nova_entrada" href="nova_entrada.php">
+                                            <i class="metismenu-icon"></i>
                                             Novo
                                             <img src="../img/icone/plus-circle-outline.png" alt="">
                                         </a>
@@ -199,7 +205,7 @@ session_start(); //inicia uma sessão
                         </ul>
                         </li>
                         <li>
-                            <a href="../paginas/cliente.php">
+                        <a id="seleciona_cliente" href="../paginas/cliente.php">
                                 <i class="metismenu-icon pe-7s-diamond">
                                     <i class="metismenu-icon pe-7s-diamond">
                                         <img src="../img/icone/clientes.png" alt="">
@@ -211,7 +217,7 @@ session_start(); //inicia uma sessão
                             <ul>
 
                                 <li>
-                                    <a href="../paginas/cadastrar_cliente.php">
+                                    <a id="seleciona_novo_cliente" href="../paginas/cadastrar_cliente.php">
                                         <i class="metismenu-icon"></i>
                                         Novo
                                         <img src="../img/icone/plus-circle-outline.png" alt="">
@@ -221,7 +227,7 @@ session_start(); //inicia uma sessão
                         </ul>
                         </li>
                         <li>
-                            <a href="..\paginas\relatorios.php">
+                            <a id="seleciona_relatorios" href="..\paginas\relatorios.php">
                                 <i class="metismenu-icon pe-7s-diamond">
                                     <i class="metismenu-icon pe-7s-car">
                                         <img src="../img/icone/relatorios.png" alt="">
@@ -232,7 +238,7 @@ session_start(); //inicia uma sessão
                             </a>
                             <ul>
                                 <li>
-                                    <a href="historico_de_vendas.php">
+                                    <a id="seleciona_historico_vendas" href="historico_de_vendas.php">
                                         <i class="metismenu-icon">
                                         </i>histórico de vendas
                                     </a>
@@ -257,8 +263,8 @@ session_start(); //inicia uma sessão
                                 elemento1.classList.toggle('closed-sidebar');
                                 elemento2.classList.toggle('is-active');
                             } else {
-                                elemento1.className += (' closed-sidebar');
-                                elemento2.className += (' is-active');
+                                elemento1.className += ('closed-sidebar');
+                                elemento2.className += ('is-active');
                             }
                         }
                     </script>

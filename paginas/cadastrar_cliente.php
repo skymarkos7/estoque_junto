@@ -184,13 +184,24 @@ if (isset($_POST['nome_cliente']) && ($_POST['nome_cliente'] != "")) //verifica 
 
 ?>
 
-<!-- faz sumir o aviso de sucesso -->
-
+<!----- faz sumir o aviso de sucesso ------->
 <script type="text/javascript">
     setTimeout(function() {
         $("#aviso_de_sucesso").fadeOut().empty();
     }, 5000);
 </script>
+<!----- faz sumir o aviso de sucesso ------->
+
+
+<!--------------------- ínicio código para selecionar os menus --------------------------------->
+<script>
+    function square() {
+        const elemento = document.getElementById('seleciona_novo_cliente');
+        elemento.className += ('mm-active');
+    }
+    square();
+</script>
+<!--------------------- fim código para selecionar os menus --------------------------------->
 
 
 

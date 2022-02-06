@@ -392,6 +392,18 @@ include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será a
 
 
 
+    <!--------------------- ínicio código para selecionar os menus --------------------------------->
+<script>
+    function square() {
+        const elemento = document.getElementById('seleciona_painel');
+        elemento.className += ('mm-active');
+    }
+    square();
+</script>
+<!--------------------- fim código para selecionar os menus --------------------------------->
+
+
+
     <?php
     include_once("parte_de_baixo.php"); //inclui o rodapé da página que será apresentada
     ?>

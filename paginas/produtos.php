@@ -11,7 +11,7 @@ include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será a
         <div class="page-title-heading">
             <div class="page-title-icon">
                 <i class="pe-7s-car icon-gradient bg-mean-fruit">
-                <img src="https://img.icons8.com/nolan/64/air-suspension-warning.png"/>
+                    <img src="https://img.icons8.com/nolan/64/air-suspension-warning.png" />
                 </i>
             </div>
             <div>Peças no Estoque
@@ -31,12 +31,12 @@ include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será a
             </div>
         </div>
 
-        
-        
+
+
 
         <div class="visualizar">
-            
-              <p>  Visualizar por: </p>
+
+            <p> Visualizar por: </p>
 
             <div class="lista">
                 <img class="ilustracao_funcao" src="../img/icone/format-list.png" alt="grafico">
@@ -45,12 +45,15 @@ include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será a
             <div class="grade">
                 <img class="ilustracao_funcao" src="../img/icone/format-grade.png" alt="grafico">
             </div>
-     
-        
+
+
 
         </div>
     </div>
 </div>
+
+
+
 
 
 <script>
@@ -63,13 +66,13 @@ include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será a
 
 
 
-
 <div class="tab-pane tabs-animation fade show active">
     <div id="mostrar_produto" class="container flex">
         <span id="conteudo"></span>
     </div>
 </div>
 <script>
+    
     // TRAZER A LISTAGEM DOS PRODUTOS DA OUTRA PÁGINA E COLOCAR NA SPAN "conteudo"
     $(document).ready(function() {
         $.post('../banco/listar_produtos.php', function(retorna) {
@@ -79,7 +82,23 @@ include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será a
     });
 </script>
 
+<!--------------------- ínicio código para selecionar os menus --------------------------------->
+<script>
+    function square() {
+        const elemento = document.getElementById('seleciona_produto');
+        elemento.className += ('mm-active');
+    }
+    square();
+</script>
+<!--------------------- fim código para selecionar os menus --------------------------------->
+
 
 <?php
 include_once("parte_de_baixo.php"); //inclui o rodapé da página que será apresentada
 ?>
+
+</div>
+
+
+
+
