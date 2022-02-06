@@ -17,7 +17,7 @@ session_start(); //inicia uma sessão
     <meta http-equiv="Content-Language" content="pt-br">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>LAP - Lourenço Alto Peças</title>
+    <title>LAP - Lourenço Auto Peças</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
     <meta name="description" content="Página principal do sistema">
     <meta name="msapplication-tap-highlight" content="no">
