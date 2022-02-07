@@ -39,7 +39,7 @@ session_start(); //inicia uma sessão
     <div id="menu_retratil" ; class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
         <div class="app-header header-shadow">
             <div class="app-header__logo">
-                <div class="logo-src">Logo Marca</div>
+                <div class="logo-src"><img height="35px;" width="53px;" src="../img/logo.png" alt=""></div>
                 <div class="header__pane ml-auto">
                     <div>
                         <button id="muda_botao" ; type="button" onclick="fechar_menu();" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
@@ -159,7 +159,7 @@ session_start(); //inicia uma sessão
 
                     
                         <ul class="vertical-nav-menu">
-                            <li class="app-sidebar__heading">PAINEL DE CONTROLE
+                            <li class="app-sidebar__heading">PONTO DE VENDA
                             </li>
                             <li>
                                 <a id="seleciona_pdv" href="pdv.php" class="">
@@ -168,7 +168,7 @@ session_start(); //inicia uma sessão
                                             <img src="../img/icone/pdv.png" alt="">
                                         </i>
                                     </i>
-                                    PDV | Ponto de Venda
+                                    PDV
                                 </a>
                             </li>                          
 
