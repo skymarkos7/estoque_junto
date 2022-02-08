@@ -100,6 +100,16 @@ include_once("parte_de_cima.php");
 
 
 
+<!--------------------- ínicio código para selecionar os menus --------------------------------->
+<script>
+    function square() {
+        const elemento = document.getElementById('seleciona_cliente');
+        elemento.className += ('mm-active');
+    }
+    square();
+</script>
+<!--------------------- fim código para selecionar os menus --------------------------------->
+
 
 
 

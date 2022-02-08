@@ -39,6 +39,18 @@ Está é uma página de relatórios
 
 
 
+<!--------------------- ínicio código para selecionar os menus --------------------------------->
+<script>
+    function square() {
+        const elemento = document.getElementById('seleciona_relatorios');
+        elemento.className += ('mm-active');
+    }
+    square();
+</script>
+<!--------------------- fim código para selecionar os menus --------------------------------->
+
+
+
 <!-------------- inicio - inclue a parte de baixo da página ------------>
 <?php
 include_once("parte_de_baixo.php"); //inclui o rodapé da página que será apresentada

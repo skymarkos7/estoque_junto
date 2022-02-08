@@ -35,7 +35,15 @@ include_once("parte_de_cima.php");
 
 Está é a pagina historico de vendas
 
-
+<!--------------------- ínicio código para selecionar os menus --------------------------------->
+<script>
+    function square() {
+        const elemento = document.getElementById('seleciona_historico_vendas');
+        elemento.className += ('mm-active');
+    }
+    square();
+</script>
+<!--------------------- fim código para selecionar os menus --------------------------------->
 
 
 
