@@ -13,6 +13,9 @@ session_start(); //inicia uma sessão
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 
+    
+   
+
     <meta charset="utf-8">
     <meta http-equiv="Content-Language" content="pt-br">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -28,6 +31,16 @@ session_start(); //inicia uma sessão
     <link href="../estilo/main.css" rel="stylesheet"> <!-- estilização da página padrão -->
     <link href="estilo/main.css" rel="stylesheet"> <!-- estilização da página padrão -->
     <link rel="icon" type="image/jpg" href="../img/five.png" /> <!-- fiveicon -->
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+   
+    <script>
+    $(document).ready(function() {
+    $('.select_busca').select2();
+});
+</script>
 </head>
 
 

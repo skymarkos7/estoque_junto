@@ -1,9 +1,9 @@
 <!------------------- INICIO - INCLUI A PARTE DE CIMA DA PÁGINA -------------------->
 <?php
 include_once("parte_de_cima.php");
+ 
 ?>
 <!------------------- FIM - INCLUI A PARTE DE CIMA DA PÁGINA -------------------->
-
 
 
 

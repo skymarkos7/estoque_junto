@@ -269,6 +269,11 @@ input:checked+.slider:before {
     width: 33%px;
 }
 
+.cliente_venda select {
+    width: 120px;
+    
+}
+
 .parte_busca_pdv {
     margin-top: 10px;
     height: 110px;

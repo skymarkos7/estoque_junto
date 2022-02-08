@@ -1,13 +1,28 @@
 <!------------------- INICIO - INCLUI A PARTE DE CIMA DA PÁGINA -------------------->
 <?php
 include_once("parte_de_cima.php");
+include_once "../banco/conexao.php";
 ?>
 <!------------------- FIM - INCLUI A PARTE DE CIMA DA PÁGINA -------------------->
 
+<?php  
+$cliente_nome = "SELECT nome_cliente FROM clientes ORDER BY id DESC";
+$clientenome = mysqli_query($conn, $cliente_nome);
+
+?>
+
+
+
+
+    
+    
+
+
+
+
+
 
 <div class="tela_pdv">
-
-
 
     <div class="top_pdv">
 
@@ -31,11 +46,29 @@ include_once("parte_de_cima.php");
 
             </div>
 
+           
+            <?php if(($clientenome) AND ($clientenome->num_rows != 0)): ?>            
+    
             <div class="cliente_venda">                      
                 <p>Cliente: </p>
-                <input type="text" name="cliente_venda">
+                <select class="select_busca" >
+                <?php while($clientee = mysqli_fetch_assoc($clientenome)): ?>
+
+                    <option value=""><?php echo $clientee['nome_cliente']?></option>
+
+                    <?php   endwhile; endif;?>
+
+                </select>
+                
+                
 
             </div>
+
+           
+
+
+
+
 
         </div>
 
