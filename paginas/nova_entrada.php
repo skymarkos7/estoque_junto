@@ -60,7 +60,7 @@ include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será a
                     <div class="form-row">
                         <div class="col-md-6">
                             <div class="position-relative form-group">
-                                <input type="text" class="form-control " name="nome_popular" placeholder="Nome Popular" id="">
+                                <input type="text" required  class="form-control " name="nome_popular" placeholder="Nome Popular" id="">
                             </div>
                         </div>
 
