@@ -6,8 +6,12 @@ include_once "../banco/conexao.php";
 <!------------------- FIM - INCLUI A PARTE DE CIMA DA PÁGINA -------------------->
 
 <?php  
-$cliente_nome = "SELECT nome_cliente FROM clientes ORDER BY id DESC";
+$cliente_nome = "SELECT * FROM clientes ORDER BY id DESC";
 $clientenome = mysqli_query($conn, $cliente_nome);
+
+$produtos_nome = "SELECT * FROM produtos ORDER BY id DESC";
+$produtonome = mysqli_query($conn, $produtos_nome);
+
 
 ?>
 
@@ -49,12 +53,13 @@ $clientenome = mysqli_query($conn, $cliente_nome);
            
             <?php if(($clientenome) AND ($clientenome->num_rows != 0)): ?>            
     
-            <div class="cliente_venda">                      
+            <div class="cliente_venda">    
+
                 <p>Cliente: </p>
-                <select class="select_busca" >
+                <select name="<?php echo $clientee['id']?>" class="select_busca" >
                 <?php while($clientee = mysqli_fetch_assoc($clientenome)): ?>
 
-                    <option value=""><?php echo $clientee['nome_cliente']?></option>
+                    <option value="<?php echo $clientee['id']?>"><?php echo $clientee['nome_cliente']?></option>
 
                     <?php   endwhile; endif;?>
 
@@ -119,9 +124,22 @@ $clientenome = mysqli_query($conn, $cliente_nome);
             <input type="text" name="quantidade_item_pdv">
         </div>
 
+        <?php if(($produtonome) AND ($produtonome->num_rows != 0)): ?>  
         <div class="descrição_item_pdv">
             <p>Descrição</p>
-            <input type="text" name="descrição_item_pdv">
+
+            <select name="<?php echo $clientee['id']?>" class="select_busca" >
+
+                <?php while($produtoo = mysqli_fetch_assoc($produtonome)): ?>
+
+                    <option value="<?php echo $produtoo['id']?>"><?php echo $produtoo['nome_popular']?> / <?php echo $produtoo['nome_tecnico']?></option>
+
+                    <?php   endwhile; endif;?>
+
+                </select>
+                
+
+            <input value="" type="text" name="descrição_item_pdv">
         </div>
 
 
