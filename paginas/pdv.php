@@ -12,17 +12,7 @@ $clientenome = mysqli_query($conn, $cliente_nome);
 $produtos_nome = "SELECT * FROM produtos ORDER BY id DESC";
 $produtonome = mysqli_query($conn, $produtos_nome);
 
-
 ?>
-
-
-
-
-    
-    
-
-
-
 
 
 
@@ -46,7 +36,7 @@ $produtonome = mysqli_query($conn, $produtos_nome);
             <div class="data_venda">
 
                 <p>Data Venda: </p>
-                <input type="text" name="data_venda">
+                <input type="text" id="data" name="data_venda">
 
             </div>
 
@@ -71,44 +61,11 @@ $produtonome = mysqli_query($conn, $produtos_nome);
 
            
 
-
-
-
-
         </div>
 
 
 
-        <script>		
-        function relogio(){
-            var data=new Date();
-            var hor=data.getHours();
-            var min=data.getMinutes();
-            var seg=data.getSeconds();
-            
-            if(hor < 10){
-                hor="0"+hor;
-            }
-            if(min < 10){
-                min="0"+min;
-            }
-            if(seg < 10){
-                seg="0"+seg;
-            }
-            
-            var horas=hor + ":" + min + ":" + seg;
-            
-            document.getElementById("hora").value=horas;
-        }
-        var timer=setInterval(relogio,1000);
-    </script>
-
-
-
-
-
-
-
+        
 
         <div class="horario_pdv">
             <input type="text" id="hora">
@@ -293,9 +250,6 @@ $produtonome = mysqli_query($conn, $produtos_nome);
                                      </tfoot>
                                   </table>
                         
-                        
-                        
-                        
                     </div>
             
                     <div class="total_liquido_pdv">
@@ -309,23 +263,52 @@ $produtonome = mysqli_query($conn, $produtos_nome);
                     <div class="total_pago_pdv">
                        
                              <a>Troco</a><br> <input  type="text" name="troco">
-                    </div>
-
-            
+                    </div>        
             
         </div>
-
-
     </div>
-
-
-    
-
-
-
-
-
 </div>
+
+
+<!------------- Início - Atualizar as datas da páginas -------------------------------->
+<script>		
+        function relogio(){
+            var data=new Date();
+            var year=data.getFullYear();
+            var month=data.getMonth();
+            var day=data.getDay();
+            var hor=data.getHours();
+            var min=data.getMinutes();
+            var seg=data.getSeconds();
+            
+            if(month < 10){
+                month="0"+month;
+            }
+            if(day < 10){
+                day="0"+day;
+            }
+            if(hor < 10){
+                hor="0"+hor;
+            }
+            if(min < 10){
+                min="0"+min;
+            }
+            if(seg < 10){
+                seg="0"+seg;
+            }
+            
+            var horas=hor + ":" + min + ":" + seg;
+            var date=day + "/" + month + "/" + year;
+            
+            document.getElementById("hora").value=horas;
+            document.getElementById("data").value=date;
+
+        }
+        var timer=setInterval(relogio,1000);   
+    </script>
+<!------------- Fim - Atualizar as datas da páginas -------------------------------->
+
+
 
 
 <!--------------------- ínicio código para selecionar os menus --------------------------------->
