@@ -318,8 +318,6 @@ $produtonome = mysqli_query($conn, $produtos_nome);
         const elemento2 = document.getElementById('muda_botao');       
             elemento1.classList.toggle('closed-sidebar');
             elemento2.classList.toggle('is-active');
-
-
     }
     square();
 </script>
