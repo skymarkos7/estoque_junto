@@ -188,18 +188,7 @@ session_start(); //inicia uma sessão
                             <li class="app-sidebar__heading">Funções</li>
 
                             
-                            <li>
-                                <a id="seleciona_painel" href="painel_de_controle.php">
-                                    <i class="img-painel">
-                                        <i class="metismenu-icon pe-7s-diamond">
-                                            <img src="../img/icone/painel.png" alt="">
-                                        </i>
-                                    </i>
-                                    Painel de Controle
-                                </a>
-                                <ul>
-                            </li>
-                            </ul>
+                            
                                                         
                             <li>  
                                 <a id="seleciona_produto" type="button" ; class="" href="produtos.php">
@@ -251,7 +240,7 @@ session_start(); //inicia uma sessão
                                         <img src="../img/icone/relatorios.png" alt="">
                                     </i>
                                 </i>
-                                Relatorios
+                                Relatórios
                                 <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                             </a>
                             <ul>
