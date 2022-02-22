@@ -199,7 +199,7 @@ input:checked+.slider:before {
 
 .estado_caixa {
     float: left;
-    width: 70%;
+    width: 80%;
     height: 40px;
     font-weight: bold;
 }
@@ -207,8 +207,8 @@ input:checked+.slider:before {
 .estado_caixa p {
     text-align: center;
     line-height: 40px;
-    color: red;
-    font-size: 20px;
+    color: rgb(41, 211, 18);
+    font-size: 25px;
 }
 
 .parte_dentro_top {
