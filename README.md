@@ -12,6 +12,9 @@ Para acompanhar visualmente consulte o resultado hospedado a baixo:
 3. Inicie o servidor PHP
 4. acesse seu servidor PHP
 5. [acesse o localhost](https://localhost)
+6. Credências:
+    - Login: eu
+    - Senha: eu
 
 ### Construido com a contribuição de: ###
 * Marcos Lourenço de Souza
