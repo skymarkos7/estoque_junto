@@ -3,7 +3,7 @@
 
  if (isset($_SESSION['id']) && empty($_SESSION['id']) == false) {  //verifica se já foi feito login se sim, executa o código a baixo "pagina principal do site" - VERIFICA SE EXISTE ID DE USUÁRIO NO ID DA SESSAO
 
-   header('Location: /estoque_junto/paginas/painel_de_controle.php'); //encaminha o usuário a página home
+   header('Location:paginas/painel_de_controle.php'); //encaminha o usuário a página home
 
  } else {
 
