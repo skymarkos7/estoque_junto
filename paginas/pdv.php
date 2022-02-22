@@ -16,6 +16,8 @@ $produtonome = mysqli_query($conn, $produtos_nome);
 
 
 
+
+
 <div class="tela_pdv">
 
     <div class="top_pdv">
@@ -294,7 +296,7 @@ $produtonome = mysqli_query($conn, $produtos_nome);
 
     const d = new Date();
     let text = d.toLocaleDateString();
-    document.getElementById("datado").value = text;   
+    document.getElementById("datado").value = text;
 </script>
 <!------------- Fim - Atualizar as datas da páginas -------------------------------->
 
@@ -304,11 +306,20 @@ $produtonome = mysqli_query($conn, $produtos_nome);
 
 
 
-<!--------------------- ínicio código para selecionar os menus --------------------------------->
+<!--------------------- ínicio código para selecionar os menus e fechar menu para o PDV --------------------------------->
 <script>
     function square() {
+        //selecionar os menus
         const elemento = document.getElementById('seleciona_pdv');
         elemento.className += ('mm-active');
+
+        //fechar menu para o PDV
+        const elemento1 = document.getElementById('menu_retratil');
+        const elemento2 = document.getElementById('muda_botao');       
+            elemento1.classList.toggle('closed-sidebar');
+            elemento2.classList.toggle('is-active');
+
+
     }
     square();
 </script>
