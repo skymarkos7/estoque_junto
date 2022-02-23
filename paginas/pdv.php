@@ -168,20 +168,12 @@ $produtonome = mysqli_query($conn, $produtos_nome);
                     <p>Aplicar Desconto</p>
                     <p>Nova venda</p>
                     <p>Localizar Produto</p>
-                    <p>Alterar Venda</p>
-                    <p>Forma de Pagamento</p>
-                    <p>excluir Produto</p>
-                    <p>Alterar Qtde</p>
                 </div>
 
                 <div class="quadros quadro_atalhos2">
                     <p>Imprimir cupom</p>
                     <p>Imprimir cupom maior</p>
                     <p>Localizar Venda</p>
-                    <p>Selecionar Cliente</p>
-                    <p>Cancelar / Excluir Venda</p>
-                    <p>Finalizar Venda</p>
-                    <p>Pesquisar Produto</p>
                 </div>
 
                 <div class="quadro_funcoes">

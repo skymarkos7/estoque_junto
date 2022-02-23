@@ -8,5 +8,6 @@
  } else {
 
     header("Location:paginas/login.php"); // leva o usuário até a página de login caso ele não esteja logado
+   
 
  }
