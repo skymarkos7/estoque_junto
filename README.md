@@ -38,7 +38,7 @@ Para acompanhar visualmente consulte o resultado hospedado a baixo:
  
 ## PDV - ponto de venda
 ### OQUE CONTÉM:
- - Código da venda
+ - Id da venda
  - Data/hora da venda
  - Cliente da venda
  - Quantidade de produtos
@@ -52,7 +52,7 @@ Para acompanhar visualmente consulte o resultado hospedado a baixo:
 - Valor pago
     - Troco 
 - Tabela com todos os iténs da venda, contendo:
-    - Código do produto
+    - Id do produto
     - Descrição
     - Quantidade
     - Preço unitário
