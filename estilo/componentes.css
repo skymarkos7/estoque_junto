@@ -287,7 +287,7 @@ input:checked+.slider:before {
 }
 
 .quantidade_item_pdv input,
-.descrição_item_pdv input {
+.descrição_item_pdv span {
     background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%) !important;
     border: 0;
     outline: none;
@@ -295,10 +295,22 @@ input:checked+.slider:before {
     color: #fff;
     height: 80px;
     border-radius: 12px;
-    width: 100%;
+    width: 200%;
     font-size: 25px;
     text-transform: uppercase;
 }
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #f5f5f5c0 !important;
+    line-height: 78px !important;
+}
+
+.selection {
+    width: 100% !important; 
+}
+
+
+
 
 .quantidade_item_pdv {
     width: 10%;

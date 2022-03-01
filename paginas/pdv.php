@@ -99,7 +99,7 @@ $produtonome = mysqli_query($conn, $produtos_nome);
                 </select>
 
 
-                <input value="" type="text" name="descrição_item_pdv">
+                
             </div>
     </div>
 

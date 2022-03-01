@@ -27,7 +27,8 @@ session_start(); //inicia uma sessão
     <link rel="icon" type="image/jpg" href="img/m.png" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--icones do google - via api--->
-    <link href="../estilo/componentes.css" rel="stylesheet"> <!-- para estilizar os demais componentes -->
+   
+
     <link href="../estilo/main.css" rel="stylesheet"> <!-- estilização da página padrão -->
     <link href="estilo/main.css" rel="stylesheet"> <!-- estilização da página padrão -->
     <link rel="icon" type="image/jpg" href="../img/five.png" /> <!-- fiveicon -->
@@ -35,6 +36,8 @@ session_start(); //inicia uma sessão
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <link href="../estilo/componentes.css" rel="stylesheet"> <!-- para estilizar os demais componentes -->
    
     <script>
     $(document).ready(function() {
