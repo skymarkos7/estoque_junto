@@ -1,5 +1,6 @@
 # Leia-me #
 Esse sistema vem com o objetivo de fornecer um meio ágil para vendas, vindo em paralelo um gerenciamento completo das saídas e entradas dos produtos.
+* Foco extremo no cliente final, suprindo as necessidades especificas deste caso de uso.
 
 ## Mais sobre ###
 Para acompanhar visualmente consulte o resultado hospedado a baixo:
