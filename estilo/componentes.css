@@ -300,6 +300,16 @@ input:checked+.slider:before {
     text-transform: uppercase;
 }
 
+.select2-dropdown {
+    width: 845.5px !important;
+}
+
+
+
+
+
+
+
 .select2-container--default .select2-selection--single .select2-selection__rendered {
     color: #f5f5f5c0 !important;
     line-height: 78px !important;
