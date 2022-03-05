@@ -2,6 +2,7 @@
 <?php
 include_once("parte_de_cima.php");
 include_once "../banco/conexao.php";
+
 ?>
 <!------------------- FIM - INCLUI A PARTE DE CIMA DA PÁGINA -------------------->
 
@@ -13,6 +14,65 @@ $produtos_nome = "SELECT * FROM produtos ORDER BY id DESC";
 $produtonome = mysqli_query($conn, $produtos_nome);
 
 ?>
+
+
+   <!-- ----------------------------------FOMULARIO ONDE DIGITA O TEMO PARA PESQUISAR -->
+<form method="POST" action="">
+
+    <input type="text" name="termo_buscado">
+    <input type="submit" value="pesquisar">
+
+</form>
+ <!-- ------------------------------------------O FIM DO FORMULARIO -->
+
+ <!-- -----------------------------------------------FAZENDO A BUSCA NO BANCO DO TERMO DIGITADO -->
+<?php
+    @$termo_buscado = $_POST['termo_buscado'] ;
+
+$result_produto = 
+ "SELECT * FROM produtos 
+   WHERE nome_tecnico LIKE '%$termo_buscado%'
+   OR nome_popular LIKE '%$termo_buscado%'
+    OR referencia LIKE '%$termo_buscado%'
+     OR aplicacao LIKE '%$termo_buscado%' ";
+
+    $resultado_produto = mysqli_query($conn, $result_produto);
+
+?>
+<!--  -------------------------------------------AQUI ACABA A BUSCA E É RETORNADO AS VARIAVEIS COM O RESULTADO -->
+
+<!-- --------------------------------------------- AQUI É PARA A EXIBIÇÃO SE EXISTIR O CONTEUDO BUSCADO  -->
+<?php  if(isset($_POST['termo_buscado'])) {?>
+
+<?php foreach ($resultado_produto as $pesq_prod) : ?>
+
+    <p><?php echo $pesq_prod['id'] ?></p>
+    <p><?php echo $pesq_prod['nome_tecnico'] ?></p>
+    <p><?php echo $pesq_prod['nome_popular'] ?></p>
+    <p><?php echo $pesq_prod['referencia'] ?></p>
+    <p><?php echo $pesq_prod['preco'] ?></p>
+    <p><?php echo $pesq_prod['fornecedor'] ?></p>
+    <p><?php echo $pesq_prod['fabricante'] ?></p>
+    <p><?php echo $pesq_prod['aplicacao'] ?></p>
+    <p><?php echo $pesq_prod['quantidade'] ?></p>
+    <p><?php echo $pesq_prod['lugar'] ?></p>
+    <p><?php echo $pesq_prod['nota'] ?></p>
+    <p><?php echo $pesq_prod['categoria'] ?></p>
+
+<?php endforeach; ?>
+ 
+<?php  } ?>
+ 
+ <!-- --------------------------------------------------------------- FIM DOS RESULTADO BUSCADOS -->
+
+
+
+
+
+
+
+
+
 
 
 
