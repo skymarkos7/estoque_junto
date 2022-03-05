@@ -33,11 +33,23 @@ session_start(); //inicia uma sessão
     <link href="estilo/main.css" rel="stylesheet"> <!-- estilização da página padrão -->
     <link rel="icon" type="image/jpg" href="../img/five.png" /> <!-- fiveicon -->
     
+
+
+
+    <!-- coisas ESTILO E JAVASCRIPT para pesquisa do PRODUTO e CLIENTE - INÍCIO -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+   <!-- <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />  -->
+
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- coisas ESTILO E JAVASCRIPT para pesquisa do PRODUTO e CLIENTE - FIM -->
+
+
+
+
 
     <link href="../estilo/componentes.css" rel="stylesheet"> <!-- para estilizar os demais componentes -->
+    <link href="../estilo/pesquisa-pdv.css" rel="stylesheet"> <!-- para estilizar os demais componentes -->
    
     <script>
     $(document).ready(function() {

@@ -300,10 +300,12 @@ input:checked+.slider:before {
     text-transform: uppercase;
 }
 
-.select2-dropdown {
+
+/*
+.select2-dropdown--below {
     width: 845.5px !important;
 }
-
+*/
 
 
 

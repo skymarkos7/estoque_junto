@@ -16,57 +16,54 @@ $produtonome = mysqli_query($conn, $produtos_nome);
 ?>
 
 
-   <!-- ----------------------------------FOMULARIO ONDE DIGITA O TEMO PARA PESQUISAR -->
+<!-- ----------------------------------FOMULARIO ONDE DIGITA O TEMO PARA PESQUISAR -->
 <form method="POST" action="">
 
     <input type="text" name="termo_buscado">
     <input type="submit" value="pesquisar">
 
 </form>
- <!-- ------------------------------------------O FIM DO FORMULARIO -->
+<!-- ------------------------------------------O FIM DO FORMULARIO -->
 
- <!-- -----------------------------------------------FAZENDO A BUSCA NO BANCO DO TERMO DIGITADO -->
+<!-- -----------------------------------------------FAZENDO A BUSCA NO BANCO DO TERMO DIGITADO -->
 <?php
-    @$termo_buscado = $_POST['termo_buscado'] ;
+@$termo_buscado = $_POST['termo_buscado'];
 
-$result_produto = 
- "SELECT * FROM produtos 
+$result_produto =
+    "SELECT * FROM produtos 
    WHERE nome_tecnico LIKE '%$termo_buscado%'
    OR nome_popular LIKE '%$termo_buscado%'
     OR referencia LIKE '%$termo_buscado%'
      OR aplicacao LIKE '%$termo_buscado%' ";
 
-    $resultado_produto = mysqli_query($conn, $result_produto);
+$resultado_produto = mysqli_query($conn, $result_produto);
 
 ?>
 <!--  -------------------------------------------AQUI ACABA A BUSCA E É RETORNADO AS VARIAVEIS COM O RESULTADO -->
 
 <!-- --------------------------------------------- AQUI É PARA A EXIBIÇÃO SE EXISTIR O CONTEUDO BUSCADO  -->
-<?php  if(isset($_POST['termo_buscado'])) {?>
+<?php if (isset($_POST['termo_buscado'])) { ?>
 
-<?php foreach ($resultado_produto as $pesq_prod) : ?>
+    <?php foreach ($resultado_produto as $pesq_prod) : ?>
 
-    <p><?php echo $pesq_prod['id'] ?></p>
-    <p><?php echo $pesq_prod['nome_tecnico'] ?></p>
-    <p><?php echo $pesq_prod['nome_popular'] ?></p>
-    <p><?php echo $pesq_prod['referencia'] ?></p>
-    <p><?php echo $pesq_prod['preco'] ?></p>
-    <p><?php echo $pesq_prod['fornecedor'] ?></p>
-    <p><?php echo $pesq_prod['fabricante'] ?></p>
-    <p><?php echo $pesq_prod['aplicacao'] ?></p>
-    <p><?php echo $pesq_prod['quantidade'] ?></p>
-    <p><?php echo $pesq_prod['lugar'] ?></p>
-    <p><?php echo $pesq_prod['nota'] ?></p>
-    <p><?php echo $pesq_prod['categoria'] ?></p>
+        <p><?php echo $pesq_prod['id'] ?></p>
+        <p><?php echo $pesq_prod['nome_tecnico'] ?></p>
+        <p><?php echo $pesq_prod['nome_popular'] ?></p>
+        <p><?php echo $pesq_prod['referencia'] ?></p>
+        <p><?php echo $pesq_prod['preco'] ?></p>
+        <p><?php echo $pesq_prod['fornecedor'] ?></p>
+        <p><?php echo $pesq_prod['fabricante'] ?></p>
+        <p><?php echo $pesq_prod['aplicacao'] ?></p>
+        <p><?php echo $pesq_prod['quantidade'] ?></p>
+        <p><?php echo $pesq_prod['lugar'] ?></p>
+        <p><?php echo $pesq_prod['nota'] ?></p>
+        <p><?php echo $pesq_prod['categoria'] ?></p>
 
-<?php endforeach; ?>
- 
+    <?php endforeach; ?>
+
 <?php  } ?>
- 
- <!-- --------------------------------------------------------------- FIM DOS RESULTADO BUSCADOS -->
 
-
-
+<!-- --------------------------------------------------------------- FIM DOS RESULTADO BUSCADOS -->
 
 
 
@@ -144,7 +141,7 @@ $result_produto =
         </div>
 
         <?php if (($produtonome) and ($produtonome->num_rows != 0)) : ?>
-            <div class="descrição_item_pdv">
+            <div onclick="alerta()" class="descrição_item_pdv">
                 <p>Descrição</p>
 
                 <select name="<?php echo $clientee['id'] ?>" class="select_busca">
@@ -153,13 +150,20 @@ $result_produto =
 
                         <option value="<?php echo $produtoo['id'] ?>"><?php echo $produtoo['nome_popular'] ?> / <?php echo $produtoo['nome_tecnico'] ?></option>
 
+
+                        <script>
+                            function alerta() {
+                                alert("<?php echo $clientee['id'] ?>");
+                            }
+                        </script>
+
+
                 <?php endwhile;
                 endif; ?>
 
                 </select>
 
 
-                
             </div>
     </div>
 
@@ -367,9 +371,9 @@ $result_produto =
 
         //fechar menu para o PDV
         const elemento1 = document.getElementById('menu_retratil');
-        const elemento2 = document.getElementById('muda_botao');       
-            elemento1.classList.toggle('closed-sidebar');
-            elemento2.classList.toggle('is-active');
+        const elemento2 = document.getElementById('muda_botao');
+        elemento1.classList.toggle('closed-sidebar');
+        elemento2.classList.toggle('is-active');
     }
     square();
 </script>
