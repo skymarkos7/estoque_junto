@@ -124,8 +124,6 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
 
 
-
-
         <div class="horario_pdv">
             <input type="text" id="hora">
         </div>
@@ -141,7 +139,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
         </div>
 
         <?php if (($produtonome) and ($produtonome->num_rows != 0)) : ?>
-            <div onclick="alerta()" class="descrição_item_pdv">
+            <div class="descrição_item_pdv">
                 <p>Descrição</p>
 
                 <select name="<?php echo $clientee['id'] ?>" class="select_busca">
@@ -150,12 +148,16 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
                         <option value="<?php echo $produtoo['id'] ?>"><?php echo $produtoo['nome_popular'] ?> / <?php echo $produtoo['nome_tecnico'] ?></option>
 
+                        
 
-                        <script>
-                            function alerta() {
-                                alert("<?php echo $clientee['id'] ?>");
-                            }
-                        </script>
+
+                        <?php
+            $varphp = $produtoo['preco'];
+                    ?>
+
+
+
+
 
 
                 <?php endwhile;
@@ -163,12 +165,10 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
                 </select>
 
-
             </div>
     </div>
 
-
-
+   
 
 
     <div class="duas_parte_corpo_pdv">
@@ -183,6 +183,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
                 </div>
             </div>
 
+
             <div class="codigo_e_valor">
 
                 <div class="codigo_produto_pdv">
@@ -192,9 +193,19 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
                 <div class="valor_produto_pdv">
                     <p>Valor Unitário</p>
-                    <input type="text" name="valor_produto_pdv">
+                    <input type="text" id="vlu"  name="valor_produto_pdv">
                 </div>
             </div>
+
+
+
+
+            <script>
+var leitura = "<?php echo $varphp;?>";
+document.getElementById("vlu").value = leitura;
+            </script>
+
+
 
 
             <div class="formas_de_pagamentos_e_outros">
@@ -241,10 +252,10 @@ $resultado_produto = mysqli_query($conn, $result_produto);
                 </div>
 
                 <div class="quadro_funcoes">
-                    <p>Nova Venda</p>
+                    <p>Adicionar Produto</p>
+                    <p></p>
+                    <p>Cancelar Venda</p>
                     <p>Finalizar Venda</p>
-                    <p>tela vendas completa</p>
-                    <p>Sair</p>
                 </div>
             </div>
         </div>
@@ -320,9 +331,6 @@ $resultado_produto = mysqli_query($conn, $result_produto);
         </div>
     </div>
 </div>
-
-<script>
-</script>
 
 
 
