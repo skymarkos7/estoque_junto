@@ -16,6 +16,7 @@ $produtonome = mysqli_query($conn, $produtos_nome);
 ?>
 
 
+
 <!-- ----------------------------------FOMULARIO ONDE DIGITA O TEMO PARA PESQUISAR -->
 <form method="POST" action="">
 
@@ -64,8 +65,6 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 <?php  } ?>
 
 <!-- --------------------------------------------------------------- FIM DOS RESULTADO BUSCADOS -->
-
-
 
 
 
@@ -148,15 +147,11 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
                         <option value="<?php echo $produtoo['id'] ?>"><?php echo $produtoo['nome_popular'] ?> / <?php echo $produtoo['nome_tecnico'] ?></option>
 
-                        
-
 
                         <?php
-            $varphp = $produtoo['preco'];
-                    ?>
-
-
-
+                        // salvando variável para ser usada pelo JavaScript - IDEAL É FAZER UM FOR CONTADOR COM ARRAY
+                        $varphp = $produtoo['preco'];
+                        ?>
 
 
 
@@ -168,7 +163,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
             </div>
     </div>
 
-   
+
 
 
     <div class="duas_parte_corpo_pdv">
@@ -193,17 +188,12 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
                 <div class="valor_produto_pdv">
                     <p>Valor Unitário</p>
-                    <input type="text" id="vlu"  name="valor_produto_pdv">
+                    <input type="text" id="valor_unitario" name="valor_produto_pdv">
                 </div>
             </div>
 
 
 
-
-            <script>
-var leitura = "<?php echo $varphp;?>";
-document.getElementById("vlu").value = leitura;
-            </script>
 
 
 
@@ -211,7 +201,7 @@ document.getElementById("vlu").value = leitura;
             <div class="formas_de_pagamentos_e_outros">
 
                 <div class="forma1">
-                    <a>Forma pgto (1): </a>
+                    <a>Forma pgto (Cartão): </a>
 
                     <input class="forma_input1" type="text" name="forma_de_pgto">
 
@@ -223,7 +213,7 @@ document.getElementById("vlu").value = leitura;
                 <br>
 
                 <div class="forma2">
-                    <a>Forma pgto (2): </a>
+                    <a>Forma pgto (Dinheiro): </a>
                     <input class="forma_input1" type="text" name="forma_de_pgto2">
                     <input class="forma_input2" type="text" name="valor_forma_de_pgto2">
                 </div>
@@ -386,3 +376,20 @@ document.getElementById("vlu").value = leitura;
     square();
 </script>
 <!--------------------- fim código para selecionar os menus --------------------------------->
+
+
+
+
+
+
+
+<!-- capturando preço e mandando para imput -->
+<script>
+    var leitura = "<?php echo $varphp; ?>";
+    document.getElementById("valor_unitario").value = leitura;
+    //  alert = document.getElementById("select2--0d-container").value;
+    // let url = getElementById('select2--j2-container').innerText;
+    //alert(url);
+    // console.log(url);
+</script>
+<!---------------------FIM--------------------------->
