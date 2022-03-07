@@ -161,7 +161,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
             <div class="descrição_item_pdv">
                 <p>Descrição</p>
 
-                <select name="<?php echo $clientee['id'] ?>" class="select_busca">
+                <select  name="<?php echo $clientee['id'] ?>" class="select_busca">
 
                     <?php while ($produtoo = mysqli_fetch_assoc($produtonome)) : ?>
                         
@@ -410,9 +410,6 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
 
 
-
-
-
 <!-- capturando preço e mandando para imput -->
 <script>
     var leitura = "<?php echo $varphp[0]; ?>";
@@ -423,5 +420,4 @@ $resultado_produto = mysqli_query($conn, $result_produto);
     // console.log(url);
 </script>
 <!---------------------FIM--------------------------->
-
 
