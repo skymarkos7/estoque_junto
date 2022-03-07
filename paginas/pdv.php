@@ -9,12 +9,13 @@ include_once "../banco/conexao.php";
 
 
 
-<script> // Inseri uma barrinha de busca dentro dos resultados
+<!----------- Inseri uma barrinha de busca dentro dos resultados -------------->
+<script> 
     $(document).ready(function() {
     $('.select_busca').select2();
 });
 </script>
-
+<!---------------- FIM --------------------------------------->
 
 
 
@@ -272,6 +273,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
                 <div class="quadro_funcoes">
                     <p>Adicionar Produto</p>
+                    <p>Limpar Produto</p>
                     <p>Finalizar Venda</p>
                     <p>Cancelar Venda</p>
                 </div>
