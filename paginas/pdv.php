@@ -137,6 +137,10 @@ $resultado_produto = mysqli_query($conn, $result_produto);
             <input type="text" name="quantidade_item_pdv">
         </div>
 
+                         <?php
+                        $i = 0;                        
+                        ?>
+
         <?php if (($produtonome) and ($produtonome->num_rows != 0)) : ?>
             <div class="descrição_item_pdv">
                 <p>Descrição</p>
@@ -144,15 +148,16 @@ $resultado_produto = mysqli_query($conn, $result_produto);
                 <select name="<?php echo $clientee['id'] ?>" class="select_busca">
 
                     <?php while ($produtoo = mysqli_fetch_assoc($produtonome)) : ?>
-
+                        
+                        
                         <option value="<?php echo $produtoo['id'] ?>"><?php echo $produtoo['nome_popular'] ?> / <?php echo $produtoo['nome_tecnico'] ?></option>
 
 
                         <?php
                         // salvando variável para ser usada pelo JavaScript - IDEAL É FAZER UM FOR CONTADOR COM ARRAY
-                        $varphp = $produtoo['preco'];
+                        $varphp[$i] = "R$ ".$produtoo['preco'];
+                        $i++;
                         ?>
-
 
 
                 <?php endwhile;
@@ -164,6 +169,9 @@ $resultado_produto = mysqli_query($conn, $result_produto);
     </div>
 
 
+                        <?php                        
+                        for ($i = 0; $i < count($varphp); $i++){ echo $varphp [$i] . PHP_EOL; }
+                        ?>
 
 
     <div class="duas_parte_corpo_pdv">
@@ -385,7 +393,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
 <!-- capturando preço e mandando para imput -->
 <script>
-    var leitura = "<?php echo $varphp; ?>";
+    var leitura = "<?php echo $varphp[2]; ?>";
     document.getElementById("valor_unitario").value = leitura;
     //  alert = document.getElementById("select2--0d-container").value;
     // let url = getElementById('select2--j2-container').innerText;
