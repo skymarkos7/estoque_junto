@@ -18,7 +18,7 @@ session_start(); //inicia uma sessão
 
     <meta charset="utf-8">
     <meta http-equiv="Content-Language" content="pt-br">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  <!-- Faz reconhecer comandos Jquery -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>LAP - Lourenço Alto Peças</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
@@ -37,8 +37,6 @@ session_start(); //inicia uma sessão
 
 
     <!-- coisas ESTILO E JAVASCRIPT para pesquisa do PRODUTO e CLIENTE - INÍCIO -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
    <!-- <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />  -->
 
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
@@ -51,11 +49,7 @@ session_start(); //inicia uma sessão
     <link href="../estilo/componentes.css" rel="stylesheet"> <!-- para estilizar os demais componentes -->
     <link href="../estilo/pesquisa-pdv.css" rel="stylesheet"> <!-- para estilizar os demais componentes -->
    
-    <script>
-    $(document).ready(function() {
-    $('.select_busca').select2();
-});
-</script>
+    
 </head>
 
 

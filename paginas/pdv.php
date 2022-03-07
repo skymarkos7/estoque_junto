@@ -6,6 +6,20 @@ include_once "../banco/conexao.php";
 ?>
 <!------------------- FIM - INCLUI A PARTE DE CIMA DA PÁGINA -------------------->
 
+
+
+
+<script> // Inseri uma barrinha de busca dentro dos resultados
+    $(document).ready(function() {
+    $('.select_busca').select2();
+});
+</script>
+
+
+
+
+
+
 <?php
 $cliente_nome = "SELECT * FROM clientes ORDER BY id DESC";
 $clientenome = mysqli_query($conn, $cliente_nome);
@@ -116,7 +130,6 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
 
                 </div>
-
 
 
         </div>
@@ -402,9 +415,11 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 <script>
     var leitura = "<?php echo $varphp[0]; ?>";
     document.getElementById("valor_unitario").value = leitura;
-    //  alert = document.getElementById("select2--0d-container").value;
+      alert = document.getElementById("select2").value;
     // let url = getElementById('select2--j2-container').innerText;
     //alert(url);
     // console.log(url);
 </script>
 <!---------------------FIM--------------------------->
+
+
