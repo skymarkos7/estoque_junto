@@ -39,6 +39,7 @@ session_start(); //inicia uma sessão
    <!-- <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />    -  Link externo Desativado -->
    <!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>               -  Link externo Desativado -->
 
+    <script src="../js/script.js"></script> 
     <script src="../js/pesquisa-pdv.js"></script> 
     <link href="../estilo/pesquisa-pdv.css" rel="stylesheet"> <!-- para estilizar os demais componentes -->
     <!-- ------------------------------------- - FIM ------------------------------------------------------------>

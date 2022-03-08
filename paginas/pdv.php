@@ -111,7 +111,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
                 <input type="text" id="datado" name="data_venda">
 
             </div>
-
+           
 
             <?php if (($clientenome) and ($clientenome->num_rows != 0)) : ?>
 
@@ -121,7 +121,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
                     <select name="<?php echo $clientee['id'] ?>" class="select_busca">
                         <?php while ($clientee = mysqli_fetch_assoc($clientenome)) : ?>
 
-                            <option value="<?php echo $clientee['id'] ?>"><?php echo $clientee['nome_cliente'] ?></option>
+                            <option  onclick="enviar()"  value="<?php echo $clientee['id'] ?>"><?php echo $clientee['nome_cliente'] ?></option>
 
                     <?php endwhile;
                     endif; ?>
