@@ -158,15 +158,15 @@ $resultado_produto = mysqli_query($conn, $result_produto);
                         ?>
 
         <?php if (($produtonome) and ($produtonome->num_rows != 0)) : ?>
-            <div onclick="foi()" class="descrição_item_pdv">
-                <p>Descrição</p>
+            <div  class="descrição_item_pdv">
+                <p ">Descrição</p>
 
-                <select name="<?php echo $clientee['id'] ?>" class="select_busca">
+                <select  name="<?php echo $clientee['id'] ?>" class="select_busca">
 
                     <?php while ($produtoo = mysqli_fetch_assoc($produtonome)) : ?>
                         
                         
-                        <option  value="<?php echo $produtoo['id'] ?>"><?php echo $produtoo['id'] ?> / <?php echo $produtoo['nome_popular'] ?> / <?php echo $produtoo['nome_tecnico'] ?> - <?php echo $produtoo['preco'] ?></option>
+                        <option value="<?php echo $produtoo['id'] ?>"><?php echo $produtoo['nome_tecnico']?> / <?php echo $produtoo['preco']?></option>
 
 
                         <?php
@@ -211,7 +211,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
             <div class="codigo_e_valor">
 
-                <div class="codigo_produto_pdv">
+                <div onclick="foi()" class="codigo_produto_pdv">
                     <p>Nome do Produto</p>
                     <input type="text" id="nome_produto" name="codigo_produto_pdv">
                 </div>
@@ -407,21 +407,3 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 </script>
 <!--------------------- fim código para selecionar os menus --------------------------------->
 
-
-
-
-<!-- capturando preço e mandando para imput -->
-<script>
-    var leitura = "<?php echo $varphp[0]; ?>";
-    document.getElementById("valor_unitario").value = leitura;
-      
-     let url = getElementById('select2--j2-container').innerText;
-    alert(url);
-    // console.log(url);
-</script>
-<!---------------------FIM--------------------------->
-
-<button id="buta" onclick="foi()">
-aperte aqui para capturar
-
-</button>

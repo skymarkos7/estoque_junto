@@ -31,7 +31,7 @@ function enviar(){
  //  alert (x);
 
 
- var itens = document.getElementsByClassName("select2-selection__rendered");
+ var itens = document.getElementsByClassName("select2-selection__rendered"); //captura a classe do span
 // var item = itens[1].innerHTML;
 //alert (t);
 
@@ -39,9 +39,11 @@ function enviar(){
 
 
 function foi(){
-  var descricao = itens[1].innerHTML;
-  var id = itens[1].id;
- // alert (descricao);
- document.getElementById("nome_produto").value = descricao;
+  var descricao = itens[1].innerHTML; // acessa a classe e guarda o conteudo texto, OBS:a classe só existe depois da página carregada
+  var id = itens[1].id; // acessa o id dessa tag
+ const descricao_separado = descricao.split(" / ", 2); // cria um array e separa as informações 
+ document.getElementById("nome_produto").value = descricao_separado[0]; 
+ document.getElementById("valor_unitario").value = descricao_separado[1]; 
+
 
 }
