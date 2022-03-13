@@ -158,15 +158,15 @@ $resultado_produto = mysqli_query($conn, $result_produto);
                         ?>
 
         <?php if (($produtonome) and ($produtonome->num_rows != 0)) : ?>
-            <div class="descrição_item_pdv">
+            <div onclick="foi()" class="descrição_item_pdv">
                 <p>Descrição</p>
 
-                <select  name="<?php echo $clientee['id'] ?>" class="select_busca">
+                <select name="<?php echo $clientee['id'] ?>" class="select_busca">
 
                     <?php while ($produtoo = mysqli_fetch_assoc($produtonome)) : ?>
                         
                         
-                        <option value="<?php echo $produtoo['id'] ?>"><?php echo $produtoo['id'] ?> / <?php echo $produtoo['nome_popular'] ?> / <?php echo $produtoo['nome_tecnico'] ?> - <?php echo $produtoo['preco'] ?></option>
+                        <option  value="<?php echo $produtoo['id'] ?>"><?php echo $produtoo['id'] ?> / <?php echo $produtoo['nome_popular'] ?> / <?php echo $produtoo['nome_tecnico'] ?> - <?php echo $produtoo['preco'] ?></option>
 
 
                         <?php
@@ -203,7 +203,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
             <div class="imagem_produto_pdv">
                 <div class="imagem_produto_pdv_quadro">
 
-                    <img src="<?php echo URL_BASE; ?>midias/imagens/teclado.png" alt="" />
+                   <!-- <img src="<?php echo URL_BASE; ?>midias/imagens/teclado.png" alt="" />  -->
 
                 </div>
             </div>
@@ -213,7 +213,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
                 <div class="codigo_produto_pdv">
                     <p>Nome do Produto</p>
-                    <input type="text" name="codigo_produto_pdv">
+                    <input type="text" id="nome_produto" name="codigo_produto_pdv">
                 </div>
 
                 <div class="valor_produto_pdv">
@@ -414,10 +414,14 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 <script>
     var leitura = "<?php echo $varphp[0]; ?>";
     document.getElementById("valor_unitario").value = leitura;
-      alert = document.getElementById("select2").value;
-    // let url = getElementById('select2--j2-container').innerText;
-    //alert(url);
+      
+     let url = getElementById('select2--j2-container').innerText;
+    alert(url);
     // console.log(url);
 </script>
 <!---------------------FIM--------------------------->
 
+<button id="buta" onclick="foi()">
+aperte aqui para capturar
+
+</button>

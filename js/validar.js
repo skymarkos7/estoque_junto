@@ -92,3 +92,5 @@ function seguranca(num) {
     }
 
 }
+
+
