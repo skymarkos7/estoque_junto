@@ -18,7 +18,7 @@
 }
 
 .quadrado {
-    background-color: rgba(206, 201, 201, 0.795);
+    background-color: rgba(223 223 223 / 80%);
     margin: 15px;
     padding: 10px;
     border-radius: 3%;

@@ -1,11 +1,8 @@
-<<<<<<< HEAD
-Página para testar códigos 
-=======
-<?php
 
 
-$idadeList = [21, 23, 19, 25, 30, 41, 18, 21];
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
-for ($i = 0; $i < count($idadeList); $i++){ echo $idadeList [$i] . PHP_EOL; }
 
->>>>>>> 79071f0d1d7ad6f7c3f3bd1dff641565c18542e8
+
+<div class="badge-base LI-profile-badge" data-locale="pt_BR" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="skymarkos7" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://br.linkedin.com/in/skymarkos7?trk=profile-badge">Marcos Lourenço</a></div>
+              

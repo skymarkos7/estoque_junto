@@ -8,15 +8,13 @@ include_once "../banco/conexao.php";
 
 
 
-
 <!----------- Inseri uma barrinha de busca dentro dos resultados -------------->
-<script> 
+<script>
     $(document).ready(function() {
-    $('.select_busca').select2();
-});
+        $('.select_busca').select2();
+    });
 </script>
 <!---------------- FIM --------------------------------------->
-
 
 
 
@@ -32,17 +30,19 @@ $produtonome = mysqli_query($conn, $produtos_nome);
 
 
 
-<!-- ----------------------------------FOMULARIO ONDE DIGITA O TEMO PARA PESQUISAR -->
+<!-- ----------------------------------FOMULARIO ONDE DIGITA O TEMO PARA PESQUISAR --
 <form method="POST" action="">
 
     <input type="text" name="termo_buscado">
     <input type="submit" value="pesquisar">
 
 </form>
-<!-- ------------------------------------------O FIM DO FORMULARIO -->
+------------------------------------------O FIM DO FORMULARIO -->
+
+
 
 <!-- -----------------------------------------------FAZENDO A BUSCA NO BANCO DO TERMO DIGITADO -->
-<?php
+<?php /*
 @$termo_buscado = $_POST['termo_buscado'];
 
 $result_produto =
@@ -53,12 +53,16 @@ $result_produto =
      OR aplicacao LIKE '%$termo_buscado%' ";
 
 $resultado_produto = mysqli_query($conn, $result_produto);
-
+*/
 ?>
 <!--  -------------------------------------------AQUI ACABA A BUSCA E É RETORNADO AS VARIAVEIS COM O RESULTADO -->
 
+
+
+
+
 <!-- --------------------------------------------- AQUI É PARA A EXIBIÇÃO SE EXISTIR O CONTEUDO BUSCADO  -->
-<?php if (isset($_POST['termo_buscado'])) { ?>
+<?php /* if (isset($_POST['termo_buscado'])) { ?>
 
     <?php foreach ($resultado_produto as $pesq_prod) : ?>
 
@@ -77,9 +81,11 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
     <?php endforeach; ?>
 
-<?php  } ?>
+<?php  } */?>
 
 <!-- --------------------------------------------------------------- FIM DOS RESULTADO BUSCADOS -->
+
+
 
 
 
@@ -111,7 +117,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
                 <input type="text" id="datado" name="data_venda">
 
             </div>
-           
+
 
             <?php if (($clientenome) and ($clientenome->num_rows != 0)) : ?>
 
@@ -121,7 +127,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
                     <select name="<?php echo $clientee['id'] ?>" class="select_busca">
                         <?php while ($clientee = mysqli_fetch_assoc($clientenome)) : ?>
 
-                            <option  onclick="enviar()"  value="<?php echo $clientee['id'] ?>"><?php echo $clientee['nome_cliente'] ?></option>
+                            <option value="<?php echo $clientee['id'] ?>"><?php echo $clientee['nome_cliente'] ?></option>
 
                     <?php endwhile;
                     endif; ?>
@@ -151,36 +157,34 @@ $resultado_produto = mysqli_query($conn, $result_produto);
             <input type="text" name="quantidade_item_pdv">
         </div>
 
-                         <?php
-                        $o = 0;       // 1 - iniciando a variável    
-                        $e = 0;
-                        $a = 0;             
-                        ?>
+        <?php
+        $o = 0;       // 1 - iniciando a variável    
+        $e = 0;
+        $a = 0;
+        ?>
 
         <?php if (($produtonome) and ($produtonome->num_rows != 0)) : ?>
-            <div  class="descrição_item_pdv">
+            <div class="descrição_item_pdv">
                 <p ">Descrição</p>
 
-                <select  name="<?php echo $clientee['id'] ?>" class="select_busca">
+                <select  name=" <?php echo $clientee['id'] ?>" class="select_busca">
 
                     <?php while ($produtoo = mysqli_fetch_assoc($produtonome)) : ?>
-                        
-                        
-                        <option value="<?php echo $produtoo['id'] ?>"><?php echo $produtoo['nome_tecnico']?> / <?php echo $produtoo['preco']?></option>
 
 
-                        <?php
+                        <option value="<?php echo $produtoo['id'] ?>"><?php echo $produtoo['nome_tecnico'] ?> / <?php echo $produtoo['preco'] ?></option>
+
+
+                        <?php /*    APRENAS COMENTANDO PARA USAR ESSE CODIGO NO FUTURO PARA SABER QUAL ID É DE CADA PRODUTO
                         // salvando variável para ser usada pelo JavaScript - IDEAL É FAZER UM FOR CONTADOR COM ARRAY
                         $agrupa_id[$a] = $produtoo['id'];
-                        $preco[$e] = "- R$ ".$produtoo['preco']; // 2 - salvando e incrementando
+                        $preco[$e] = "- R$ " . $produtoo['preco']; // 2 - salvando e incrementando
 
-                        $varphp[$o] = "id ".$agrupa_id[$a]." ".$preco[$e];
+                        $varphp[$o] = "id " . $agrupa_id[$a] . " " . $preco[$e];
                         $o++;
                         $a++;
                         $e++;
-
-                        ?>
-
+                        */ ?>
 
                 <?php endwhile;
                 endif; ?>
@@ -191,9 +195,12 @@ $resultado_produto = mysqli_query($conn, $result_produto);
     </div>
 
 
-                        <?php                        
-                        for ($i = 0; $i < count($varphp); $i++){ echo $varphp [$i] . PHP_EOL; } // 3 - imprimindo
-                        ?>
+    <?php /*
+    for ($i = 0; $i < count($varphp); $i++) {
+        echo $varphp[$i] . PHP_EOL;
+    } // 3 - imprimindo
+    */
+    ?>
 
 
     <div class="duas_parte_corpo_pdv">
@@ -203,7 +210,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
             <div class="imagem_produto_pdv">
                 <div class="imagem_produto_pdv_quadro">
 
-                   <!-- <img src="<?php echo URL_BASE; ?>midias/imagens/teclado.png" alt="" />  -->
+                    <img src="../img/produto.png" width="90%" height="90%" style="margin-top:10px;" alt="Imagem do produto" /> 
 
                 </div>
             </div>
@@ -211,14 +218,14 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
             <div class="codigo_e_valor">
 
-                <div onclick="foi()" class="codigo_produto_pdv">
+                <div onclick="captura_dados()" class="codigo_produto_pdv">
                     <p>Nome do Produto</p>
-                    <input type="text" id="nome_produto" name="codigo_produto_pdv">
+                    <input placeholder="Insira um produto" type="text" id="nome_produto" name="codigo_produto_pdv">
                 </div>
 
                 <div class="valor_produto_pdv">
                     <p>Valor Unitário</p>
-                    <input type="text" id="valor_unitario" name="valor_produto_pdv">
+                    <input placeholder="0,00" type="text" id="valor_unitario" name="valor_produto_pdv">
                 </div>
             </div>
 
@@ -406,4 +413,3 @@ $resultado_produto = mysqli_query($conn, $result_produto);
     square();
 </script>
 <!--------------------- fim código para selecionar os menus --------------------------------->
-
