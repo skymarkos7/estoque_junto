@@ -108,7 +108,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
             <div class="numero_venda">
 
                 <p>Nr. Venda: </p>
-                <input type="text" name="numero_venda">
+                <input type="text" value="00021" name="numero_venda">
 
             </div>
             <div class="data_venda">
@@ -154,20 +154,20 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
         <div class="quantidade_item_pdv">
             <p>Qtd</p>
-            <input type="text" name="quantidade_item_pdv">
+            <input type="text" value="1" name="quantidade_item_pdv">
         </div>
 
-        <?php
+        <?php/*
         $o = 0;       // 1 - iniciando a variável    
         $e = 0;
         $a = 0;
-        ?>
+      */  ?>
 
         <?php if (($produtonome) and ($produtonome->num_rows != 0)) : ?>
             <div class="descrição_item_pdv">
                 <p ">Descrição</p>
 
-                <select  name=" <?php echo $clientee['id'] ?>" class="select_busca">
+                <select  name="<?php echo $clientee['id'] ?>" class="select_busca">
 
                     <?php while ($produtoo = mysqli_fetch_assoc($produtonome)) : ?>
 
@@ -225,7 +225,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
                 <div class="valor_produto_pdv">
                     <p>Valor Unitário</p>
-                    <input placeholder="0,00" type="text" id="valor_unitario" name="valor_produto_pdv">
+                    <input placeholder="0,00" class="alinhamento" type="text" id="valor_unitario" name="valor_produto_pdv">
                 </div>
             </div>
 
@@ -238,29 +238,20 @@ $resultado_produto = mysqli_query($conn, $result_produto);
             <div class="formas_de_pagamentos_e_outros">
 
                 <div class="forma1">
-                    <a>Forma pgto (Cartão): </a>
+                    <a>Forma pgto: </a>
 
-                    <input class="forma_input1" type="text" name="forma_de_pgto">
+                    <button class="forma_input1 alinhamento" type="text" name="forma_de_pgto"> cartão </button>
 
-                    <input class="forma_input2" type="text" name="valor_forma_de_pgto">
+                    <button class="forma_input2 alinhamento" type="text" name="valor_forma_de_pgto"> Dinheiro </button>
 
                 </div>
 
 
                 <br>
 
-                <div class="forma2">
-                    <a>Forma pgto (Dinheiro): </a>
-                    <input class="forma_input1" type="text" name="forma_de_pgto2">
-                    <input class="forma_input2" type="text" name="valor_forma_de_pgto2">
-                </div>
+               
 
-                <div class="vendedoretotais">
-                    <a>Total Bruto: </a> <input class="tbruto_input" type="text" name="total_bruto">
-                    <a>Vendedor: </a> <input class="vendor_input" type="text" name="vendedor">
-                    <a>Qtd itens: </a> <input class="qtde_input" type="text" name="qtde_itens">
-                </div>
-
+               
 
             </div>
 
@@ -343,16 +334,16 @@ $resultado_produto = mysqli_query($conn, $result_produto);
             </div>
 
             <div class="total_liquido_pdv">
-                <p>Total Liquido</p> <input class="qtde_input" type="text" name="total_liquido">
+                <p>Total Liquido</p> <input placeholder="0,00" class="qtde_input alinhamento" type="text" name="total_liquido">
             </div>
 
             <div class="total_pago_pdv">
-                <a>Total Pago</a><br> <input type="text" name="total_pago">
+                <a>Total Pago</a><br> <input class="alinhamento" placeholder="0,00" type="text" name="total_pago">
 
             </div>
             <div class="total_pago_pdv">
 
-                <a>Troco</a><br> <input type="text" name="troco">
+                <a>Troco</a><br> <input style="text-align: right;" class="alinhamento" placeholder="0,00" type="text" name="troco">
             </div>
 
         </div>
