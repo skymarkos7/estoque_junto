@@ -273,7 +273,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
                     <p>Adicionar Produto</p>
                     <p>Limpar Produto</p>
                     <p>Finalizar Venda</p>
-                    <p>Cancelar Venda</p>
+                    <p style="background-color:red;" >Cancelar Venda</p>
                 </div>
             </div>
         </div>
