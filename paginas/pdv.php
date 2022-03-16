@@ -154,7 +154,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
         <div class="quantidade_item_pdv">
             <p>Qtd</p>
-            <input type="text" value="1" name="quantidade_item_pdv">
+            <input type="text" value="1" id="qtde_prod" name="quantidade_item_pdv">
         </div>
 
         <?php/*
@@ -164,15 +164,15 @@ $resultado_produto = mysqli_query($conn, $result_produto);
       */  ?>
 
         <?php if (($produtonome) and ($produtonome->num_rows != 0)) : ?>
-            <div class="descrição_item_pdv">
-                <p ">Descrição</p>
+            <div onchange="captura_dados()" class="descrição_item_pdv">
+                <p>Descrição</p>
 
-                <select  name="<?php echo $clientee['id'] ?>" class="select_busca">
+                <select name="<?php echo $clientee['id'] ?>" class="select_busca">
 
                     <?php while ($produtoo = mysqli_fetch_assoc($produtonome)) : ?>
 
 
-                        <option value="<?php echo $produtoo['id'] ?>"><?php echo $produtoo['nome_tecnico'] ?> / <?php echo $produtoo['preco'] ?></option>
+                        <option  value="<?php echo $produtoo['id'] ?>"><?php echo $produtoo['nome_tecnico'] ?> / <?php echo $produtoo['preco'] ?></option>
 
 
                         <?php /*    APRENAS COMENTANDO PARA USAR ESSE CODIGO NO FUTURO PARA SABER QUAL ID É DE CADA PRODUTO
@@ -218,7 +218,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
             <div class="codigo_e_valor">
 
-                <div onclick="captura_dados()" class="codigo_produto_pdv">
+                <div  class="codigo_produto_pdv">
                     <p>Nome do Produto</p>
                     <input placeholder="Insira um produto" type="text" id="nome_produto" name="codigo_produto_pdv">
                 </div>
@@ -270,7 +270,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
                 </div>
 
                 <div class="quadro_funcoes">
-                    <p>Adicionar Produto</p>
+                    <p onclick="adicionando()">Adicionar Produto</p>
                     <p>Limpar Produto</p>
                     <p>Finalizar Venda</p>
                     <p style="background-color:red;" >Cancelar Venda</p>
@@ -296,39 +296,19 @@ $resultado_produto = mysqli_query($conn, $result_produto);
                             <th>Total Bruto</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
+                    <tbody id="insercao_tr">
+                        <tr id ="insercao_td">
                             <td>12345</td>
-                            <td>Coca Cola</td>
+                            <td id="nome_prod_tabela">Coca Cola</td>
                             <td>UN</td>
-                            <td>2</td>
-                            <td>R$2,50</td>
+                            <td id="qtde_prod_tabela">2</td>
+                            <td id="valor_prod_tabela">R$2,50</td>
                             <td>R$0,00</td>
                             <td>R$0,00</td>
-                            <td>R$5,00</td>
+                            <td id="total_bruto">R$5,00</td>
 
                         </tr>
-                        <tr>
-                            <td> 54321</td>
-                            <td>Mouse Sem fio</td>
-                            <td>UN</td>
-                            <td>1</td>
-                            <td>R$25,00</td>
-                            <td>R$0,00</td>
-                            <td>R$0,00</td>
-                            <td>R$25,00</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <td>98756</td>
-                        <td>Batom Marrom</td>
-                        <td>UN</td>
-                        <td>1</td>
-                        <td>R$5,00</td>
-                        <td>R$0,00</td>
-                        <td>R$0,00</td>
-                        <td>R$5,00</td>
-                    </tfoot>
+                    
                 </table>
 
             </div>
