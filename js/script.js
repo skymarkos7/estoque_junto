@@ -25,15 +25,15 @@ function adicionando(){
     var tr = document.createElement("tr");
     var td = document.createElement("td");
         
-    document.getElementById("insercao_tr").appendChild(tr).appendChild(td);
+    // document.getElementById("insercao_tr").appendChild(tr).appendChild(td);
     
 
-    // document.getElementById("nome_prod_tabela").createElement('td');
+    // // document.getElementById("nome_prod_tabela").createElement('td');
 
-    // document.getElementById("nome_prod_tabela").innerHTML = nome_produto;
-    // document.getElementById("qtde_prod_tabela").innerHTML = qtde_produto;
-    // document.getElementById("valor_prod_tabela").innerHTML = valor_produto;
-    // document.getElementById("total_bruto").innerHTML = parseFloat(valor_produto * qtde_produto) ;
+    document.getElementById("nome_prod_tabela").innerHTML = nome_produto;
+    document.getElementById("qtde_prod_tabela").innerHTML = qtde_produto;
+    document.getElementById("valor_prod_tabela").innerHTML = valor_produto;
+    document.getElementById("total_bruto").innerHTML = parseFloat(valor_produto * qtde_produto) ;
 
     
 
