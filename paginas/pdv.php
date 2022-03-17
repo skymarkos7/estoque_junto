@@ -308,7 +308,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
                             <td id="total_bruto">R$5,00</td>
 
                         </tr>
-                    
+                    </tbody>
                 </table>
 
             </div>
