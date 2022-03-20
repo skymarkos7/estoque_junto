@@ -296,6 +296,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
                             <th>Total Bruto</th>
                         </tr>
                     </thead>
+                    <div id="prinn"></div>
                     <tbody id="insercao_tr">
                         <tr id ="insercao_td">
                             <td>12345</td>

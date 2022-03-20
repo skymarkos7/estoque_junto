@@ -27,11 +27,28 @@ function adicionando(){
     // document.getElementById("nome_prod_tabela").createElement('td');
 
 
-    document.getElementById("nome_prod_tabela").parentNode.innerHTML = nome_produto;
-    document.getElementById("qtde_prod_tabela").parentNode.innerHTML = qtde_produto;
-    document.getElementById("valor_prod_tabela").parentNode.innerHTML = valor_produto;
+    document.getElementById("nome_prod_tabela").innerHTML = nome_produto;
+    document.getElementById("qtde_prod_tabela").innerHTML = qtde_produto;
+    document.getElementById("valor_prod_tabela").innerHTML = valor_produto;
     document.getElementById("total_bruto").innerHTML = parseFloat(valor_produto * qtde_produto) ;
-    
+
+  
+  
+
+/*
+
+
+
+
+  var divNova = document.createElement("div");
+    var conteudoNovo = document.createTextNode("Olá, cumprimentos!");
+    divNova.appendChild(conteudoNovo);
+    var ids = ttttssss;
+    element.id = ids;
+
+    console.log(divNova);
+    //console.log(conteudoNovo);
+
 
   console.log(nome_produto);
   console.log(valor_produto);
@@ -39,9 +56,36 @@ function adicionando(){
 
 
 
+   
+//---------------------------------
 
-/*
-   ----------       CÓDIGO A SER LAPIDADO
+   
+
+  
+    // cria um novo elemento div
+    // e dá à ele conteúdo
+    
+     //adiciona o nó de texto à nova div criada
+  
+    // adiciona o novo elemento criado e seu conteúdo ao DOM
+    var divAtual = document.getElementById("prinn");
+    document.body.insertBefore(divNova, divAtual);
+ 
+  
+
+
+
+
+
+
+
+
+
+----------       CÓDIGO A SER LAPIDADO
+
+
+
+
 
     // Buscar elemento pai
     var elemento_pai = document.body;
@@ -57,14 +101,7 @@ function adicionando(){
     
     // Agora sim, inserir (anexar) o elemento filho (titulo) ao elemento pai (body)
     elemento_pai.appendChild(titulo);
-    
-    
-
 */
-
-
-
-
 
 
 
