@@ -157,11 +157,11 @@ $resultado_produto = mysqli_query($conn, $result_produto);
             <input type="text" value="1" id="qtde_prod" name="quantidade_item_pdv">
         </div>
 
-        <?php/*
-        $o = 0;       // 1 - iniciando a variável    
-        $e = 0;
-        $a = 0;
-      */  ?>
+        <!-- <?php
+        // $o = 0;       // 1 - iniciando a variável    
+        // $e = 0;
+        // $a = 0;
+        ?> -->
 
         <?php if (($produtonome) and ($produtonome->num_rows != 0)) : ?>
             <div onchange="captura_dados()" class="descrição_item_pdv">
@@ -172,7 +172,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
                     <?php while ($produtoo = mysqli_fetch_assoc($produtonome)) : ?>
 
 
-                        <option  value="<?php echo $produtoo['id'] ?>"><?php echo $produtoo['nome_tecnico'] ?> / <?php echo $produtoo['preco'] ?></option>
+                        <option  value="<?php echo $produtoo['id'] ?>"><?php echo $produtoo['id']; ?> / <?php echo $produtoo['nome_tecnico'] ?> / <?php echo $produtoo['preco'] ?></option>
 
 
                         <?php /*    APRENAS COMENTANDO PARA USAR ESSE CODIGO NO FUTURO PARA SABER QUAL ID É DE CADA PRODUTO
@@ -217,6 +217,15 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
 
             <div class="codigo_e_valor">
+            
+                <!-- //isso aqui recebe o id não aparece na tela inicio -->
+            
+                <div style="display:none;"  class="codigo_produto_pdv">
+                    <p>id do Produto</p>
+                    <input placeholder="Insira um produto" type="text" id="id_produto" name="id_produto_pdv">
+                </div>
+                <!-- //isso aqui recebe o id não aparece na tela fim -->
+
 
                 <div  class="codigo_produto_pdv">
                     <p>Nome do Produto</p>
