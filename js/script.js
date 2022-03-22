@@ -31,6 +31,10 @@ function captura_dados(){
 
 
 
+ 
+
+
+
 function adicionando(){
 
     id_produto = document.getElementById("id_produto").value;
@@ -47,13 +51,18 @@ function adicionando(){
     if (typeof nome_produto !== 'undefined') {
       document.getElementById("insercao_tr").innerHTML 
       +=" <tr>   <td>"+id_produto+"</td>   <td>"+nome_produto+"</td>  <td></td>  <td>"+qtde_produto+"</td> <td>R "+v+"</td> <td></td> <td></td> <td> "+t+"</td>  </tr>";
+
+       document.getElementById('nome_produto').value = " ";
+        document.getElementById('valor_unitario').value = " ";
     }
       
+
+
+
+
     
-    
 
-
-
+   
 
 
 

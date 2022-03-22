@@ -283,8 +283,8 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
                 <div class="quadro_funcoes">
                     <p onclick="adicionando()">Adicionar Produto</p>
-                    <p>Limpar Produto</p>
-                    <p>Finalizar Venda</p>
+                    <p >Limpar Produto</p>
+                    <p >Finalizar Venda</p>
                     <p style="background-color:red;" >Cancelar Venda</p>
                 </div>
             </div>
