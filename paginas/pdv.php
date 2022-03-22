@@ -125,6 +125,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
                     <p>Cliente: </p>
                     <select name="<?php echo $clientee['id'] ?>" class="select_busca">
+                    
                         <?php while ($clientee = mysqli_fetch_assoc($clientenome)) : ?>
 
                             <option value="<?php echo $clientee['id'] ?>"><?php echo $clientee['nome_cliente'] ?></option>
@@ -169,9 +170,11 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
                 <select name="<?php echo $clientee['id'] ?>" class="select_busca">
 
+                <option value="">Por favor Escolha um Produto</option>
+
                     <?php while ($produtoo = mysqli_fetch_assoc($produtonome)) : ?>
 
-
+                        
                         <option  value="<?php echo $produtoo['id'] ?>"><?php echo $produtoo['id']; ?> / <?php echo $produtoo['nome_tecnico'] ?> / <?php echo $produtoo['preco'] ?></option>
 
 
