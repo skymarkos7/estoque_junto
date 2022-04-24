@@ -81,7 +81,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
     <?php endforeach; ?>
 
-<?php  } */?>
+<?php  } */ ?>
 
 <!-- --------------------------------------------------------------- FIM DOS RESULTADO BUSCADOS -->
 
@@ -125,7 +125,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
                     <p>Cliente: </p>
                     <select name="<?php echo $clientee['id'] ?>" class="select_busca">
-                    
+
                         <?php while ($clientee = mysqli_fetch_assoc($clientenome)) : ?>
 
                             <option value="<?php echo $clientee['id'] ?>"><?php echo $clientee['nome_cliente'] ?></option>
@@ -159,10 +159,10 @@ $resultado_produto = mysqli_query($conn, $result_produto);
         </div>
 
         <!-- <?php
-        // $o = 0;       // 1 - iniciando a variável    
-        // $e = 0;
-        // $a = 0;
-        ?> -->
+                // $o = 0;       // 1 - iniciando a variável    
+                // $e = 0;
+                // $a = 0;
+                ?> -->
 
         <?php if (($produtonome) and ($produtonome->num_rows != 0)) : ?>
             <div onchange="captura_dados()" class="descrição_item_pdv">
@@ -170,12 +170,12 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
                 <select name="<?php echo $clientee['id'] ?>" class="select_busca">
 
-                <option value="">Por favor Escolha um Produto</option>
+                    <option value="">Por favor Escolha um Produto</option>
 
                     <?php while ($produtoo = mysqli_fetch_assoc($produtonome)) : ?>
 
-                        
-                        <option  value="<?php echo $produtoo['id'] ?>"><?php echo $produtoo['id']; ?> / <?php echo $produtoo['nome_tecnico'] ?> / <?php echo $produtoo['preco'] ?></option>
+
+                        <option value="<?php echo $produtoo['id'] ?>"><?php echo $produtoo['id']; ?> / <?php echo $produtoo['nome_tecnico'] ?> / <?php echo $produtoo['preco'] ?></option>
 
 
                         <?php /*    APRENAS COMENTANDO PARA USAR ESSE CODIGO NO FUTURO PARA SABER QUAL ID É DE CADA PRODUTO
@@ -213,24 +213,24 @@ $resultado_produto = mysqli_query($conn, $result_produto);
             <div class="imagem_produto_pdv">
                 <div class="imagem_produto_pdv_quadro">
 
-                    <img src="../img/produto.png" width="90%" height="90%" style="margin-top:10px;" alt="Imagem do produto" /> 
+                    <img src="../img/produto.png" width="90%" height="90%" style="margin-top:10px;" alt="Imagem do produto" />
 
                 </div>
             </div>
 
 
             <div class="codigo_e_valor">
-            
+
                 <!-- //isso aqui recebe o id não aparece na tela inicio -->
-            
-                <div style="display:none;"  class="codigo_produto_pdv">
+
+                <div style="display:none;" class="codigo_produto_pdv">
                     <p>id do Produto</p>
                     <input placeholder="Insira um produto" type="text" id="id_produto" name="id_produto_pdv">
                 </div>
                 <!-- //isso aqui recebe o id não aparece na tela fim -->
 
 
-                <div  class="codigo_produto_pdv">
+                <div class="codigo_produto_pdv">
                     <p>Nome do Produto</p>
                     <input placeholder="Insira um produto" type="text" id="nome_produto" name="codigo_produto_pdv">
                 </div>
@@ -261,9 +261,9 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
                 <br>
 
-               
 
-               
+
+
 
             </div>
 
@@ -283,9 +283,9 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
                 <div class="quadro_funcoes">
                     <p onclick="adicionando()">Adicionar Produto</p>
-                    <p >Limpar Produto</p>
-                    <p >Finalizar Venda</p>
-                    <p style="background-color:red;" >Cancelar Venda</p>
+                    <p>Limpar Produto</p>
+                    <p>Finalizar Venda</p>
+                    <p style="background-color:red;">Cancelar Venda</p>
                 </div>
             </div>
         </div>
@@ -310,7 +310,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
                     </thead>
                     <div id="prinn"></div>
                     <tbody id="insercao_tr">
-                        <tr id ="insercao_td">
+                        <tr id="insercao_td">
                             <td>12345</td>
                             <td id="nome_prod_tabela">Coca Cola</td>
                             <td>UN</td>
