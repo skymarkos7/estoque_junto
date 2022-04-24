@@ -39,11 +39,11 @@ include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será a
             <p> Visualizar por: </p>
 
             <div class="lista">
-                <img class="ilustracao_funcao" src="../img/icone/format-list.png" alt="grafico">
+               <a href="produtos.php?tipo=lista"> <img class="ilustracao_funcao" src="../img/icone/format-list.png" alt="grafico"></a>
             </div>
 
             <div class="grade">
-                <img class="ilustracao_funcao" src="../img/icone/format-grade.png" alt="grafico">
+            <a href="produtos.php?tipo=grade"> <img class="ilustracao_funcao" src="../img/icone/format-grade.png" alt="grafico"></a>
             </div>
 
 
