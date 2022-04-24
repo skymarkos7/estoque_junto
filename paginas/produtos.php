@@ -71,7 +71,7 @@ include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será a
         <span id="conteudo"></span>
     </div>
 </div>
-<script>
+<!-- <script>
     
     // TRAZER A LISTAGEM DOS PRODUTOS DA OUTRA PÁGINA E COLOCAR NA SPAN "conteudo"
     $(document).ready(function() {
@@ -80,7 +80,15 @@ include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será a
             $("#conteudo").html(retorna);
         });
     });
-</script>
+</script> -->
+
+
+<?php
+
+include "../banco/listar_produtos.php";
+
+?>
+
 
 <!--------------------- ínicio código para selecionar os menus --------------------------------->
 <script>

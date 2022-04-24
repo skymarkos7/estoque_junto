@@ -18,11 +18,14 @@
 }
 
 .quadrado {
+    float:left;
+
     background-color: #F7F9FA;
+    width: 250px;
+    height: 200px;
     margin: 15px;
     padding: 10px;
     border-radius: 3%;
-    max-width: 250px;
     border: 1px solid #ccc;
 }
 
