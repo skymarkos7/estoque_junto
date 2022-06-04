@@ -6,7 +6,7 @@ Esse sistema vem com o objetivo de fornecer um meio ágil para vendas, vindo em 
 Para acompanhar visualmente consulte o resultado hospedado a baixo:
 * [Planilha](https://docs.google.com/spreadsheets/d/1pJ--yzG6VrxPxR_o_40j-sA7D_EZL4uiNFwE5naOMi0/edit#gid=902601484) que gerou a inspiração
 * Versão primária [Web](https://www.lourencoautopecas.com.br) - [Repositório](https://github.com/Guilherme2080/estrutura_mvc)
-* Versão atual [Web](https://estoque-junto.lourencoautopecas.com.br) - [Repositório]()
+* **Versão atual** [Web](https://estoque-junto.lourencoautopecas.com.br) - [Repositório]()
 
 ## Como utilizar?
 1. Baixe o repositório
