@@ -31,10 +31,8 @@ function captura_dados(){
 
 
 
+ var totalTudo = 0; // inicializa a variável 
  
-
-
-
 function adicionando(){
 
     id_produto = document.getElementById("id_produto").value;
@@ -49,15 +47,17 @@ function adicionando(){
       var v = valor_produto.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
 
     if (typeof nome_produto !== 'undefined') {
+       
       document.getElementById("insercao_tr").innerHTML 
-      +=" <tr>   <td>"+id_produto+"</td>   <td>"+nome_produto+"</td>  <td></td>  <td>"+qtde_produto+"</td> <td>R "+v+"</td> <td></td> <td></td> <td> "+t+"</td>  </tr>";
+      +=" <tr>   <td>"+id_produto+"</td>   <td>"+nome_produto+"</td>  <td></td>  <td>"+qtde_produto+"</td> <td>R "+v+"</td> <td></td> <td></td> <td id='valorBruto'> "+t+"</td>  </tr>";
 
        document.getElementById('nome_produto').value = " ";
         document.getElementById('valor_unitario').value = " ";
     }
       
+  totalTudo = totalTudo + total_bruto;
 
-
+  document.getElementById("totalLiquido").value = totalTudo.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });;
 
 
     

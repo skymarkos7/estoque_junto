@@ -327,21 +327,27 @@ $resultado_produto = mysqli_query($conn, $result_produto);
             </div>
 
             <div class="total_liquido_pdv">
-                <p>Total Liquido</p> <input placeholder="0,00" class="qtde_input alinhamento" type="text" name="total_liquido">
+                <p>Total a Pagar</p> <input placeholder="0,00" id="totalLiquido" value="" class="qtde_input alinhamento" type="text" name="total_liquido">
             </div>
 
             <div class="total_pago_pdv">
-                <a>Total Pago</a><br> <input class="alinhamento" placeholder="0,00" type="text" name="total_pago">
+                <a>Total Pago</a><br> <input class="alinhamento" value="" placeholder="0,00" type="text" name="total_pago">
 
             </div>
             <div class="total_pago_pdv">
 
-                <a>Troco</a><br> <input style="text-align: right;" class="alinhamento" placeholder="0,00" type="text" name="troco">
+                <a>Troco</a><br> <input style="text-align: right;" value="" class="alinhamento" placeholder="0,00" type="text" name="troco">
             </div>
 
         </div>
     </div>
 </div>
+
+
+<!-------  CALCULAR OS VALORES ----------------------------------->
+<script>
+    qtde_produto = document.getElementById("qtde_prod").value;
+</script>
 
 
 
