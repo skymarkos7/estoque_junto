@@ -3,12 +3,15 @@ include_once "conexao.php";
 
 
 
-
-
 //consultar no banco de dados
 $result_produto = "SELECT * FROM produtos ORDER BY id DESC";
 $resultado_produto = mysqli_query($conn, $result_produto);
 
+
+
+if (!isset($_GET["tipo"])){
+ $_GET["tipo"] = "grade";  //definindo uma visualização padrão, caso nenhuma tenha sido escolhida
+}
 
 
 if($_GET["tipo"] == "grade"){
@@ -88,7 +91,6 @@ if (($resultado_produto) and ($resultado_produto->num_rows != 0)) {
 } else {
         echo "Nenhum produto encontrado";
 }
-
 
 
 

@@ -1,5 +1,7 @@
 <?php
 include_once("parte_de_cima.php");  //inclui o cabeçalho da página que será apresentada
+
+//$_GET["tipo"] = "lista";  //definindo uma visualização padrão para a página
 ?>
 
 
