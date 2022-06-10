@@ -250,11 +250,14 @@ $resultado_produto = mysqli_query($conn, $result_produto);
             <div class="formas_de_pagamentos_e_outros">
 
                 <div class="forma1">
-                    <a>Forma pgto: </a>
+                    <label for="cars">Forma de Pagamento:</label>
 
-                    <button class="forma_input1 alinhamento" type="text" name="forma_de_pgto"> cartão </button>
-
-                    <button class="forma_input2 alinhamento" type="text" name="valor_forma_de_pgto"> Dinheiro </button>
+                    <select id="pgt">
+                        <option value="dinheiro">Dinheiro</option>
+                        <option value="cartão">Cartão</option>
+                        <option value="pix">Pix</option>
+                        <option value="Fiado">Fiado</option>
+                    </select>
 
                 </div>
 
@@ -269,23 +272,11 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
             <div class="tres_quadros">
 
-                <div class="quadros quadro_atalhos1">
-                    <p>Aplicar Desconto</p>
-                    <p>Nova venda</p>
-                    <p>Localizar Produto</p>
-                </div>
-
-                <div class="quadros quadro_atalhos2">
-                    <p>Imprimir cupom</p>
-                    <p>Imprimir cupom maior</p>
-                    <p>Localizar Venda</p>
-                </div>
-
                 <div class="quadro_funcoes">
-                    <p onclick="adicionando()">Adicionar Produto</p>
+                    <p style="font-size: 25px;;" onclick="adicionando()"><b>Adicionar Produto</b></p>
                     <p>Limpar Produto</p>
-                    <p>Finalizar Venda</p>
-                    <p style="background-color:red;">Cancelar Venda</p>
+                    <p style="background-color:red;">Cancelar</p>
+                    <p style="background-color:#3EA95B;">Finalizar Venda</p>
                 </div>
             </div>
         </div>
@@ -311,14 +302,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
                     <div id="prinn"></div>
                     <tbody id="insercao_tr">
                         <tr id="insercao_td">
-                            <td>12345</td>
-                            <td id="nome_prod_tabela">Coca Cola</td>
-                            <td>UN</td>
-                            <td id="qtde_prod_tabela">2</td>
-                            <td id="valor_prod_tabela">R$2,50</td>
-                            <td>R$0,00</td>
-                            <td>R$0,00</td>
-                            <td id="total_bruto">R$5,00</td>
+                            
 
                         </tr>
                     </tbody>
@@ -327,16 +311,16 @@ $resultado_produto = mysqli_query($conn, $result_produto);
             </div>
 
             <div class="total_liquido_pdv">
-                <p>Total a Pagar</p> <input placeholder="0,00" id="totalLiquido" value="" class="qtde_input alinhamento" type="text" name="total_liquido">
+                <p style="font-size: 35px;"><b>Total a pagar</b></p> <input style="font-size: 45px; " placeholder="0,00" id="totalLiquido" value="" class="qtde_input alinhamento" type="text" name="total_liquido">
             </div>
 
-            <div class="total_pago_pdv">
-                <a>Total Pago</a><br> <input class="alinhamento" value="" placeholder="0,00" type="text" name="total_pago">
+            <div onkeyup="troco()" class="total_pago_pdv">
+                <a style="font-size: 25px; ">Valor pago</a><br> <input id="totalpago" class="alinhamento" value="" placeholder="0,00" type="text" name="total_pago">
 
             </div>
             <div class="total_pago_pdv">
 
-                <a>Troco</a><br> <input style="text-align: right;" value="" class="alinhamento" placeholder="0,00" type="text" name="troco">
+                <a style="font-size: 25px;">Troco</a><br> <input id="troco" style="font-size: 35px; color:#3EA95B " value="" class="alinhamento" placeholder="0,00" type="text" name="troco">
             </div>
 
         </div>

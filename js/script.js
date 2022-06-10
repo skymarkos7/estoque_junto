@@ -32,6 +32,38 @@ function captura_dados(){
 
 
  var totalTudo = 0; // inicializa a variável 
+
+
+
+
+
+
+
+
+
+function troco(){
+
+  var totalaPagar = document.getElementById("totalLiquido").value;
+  var totalPago = document.getElementById("totalpago").value; // sem formatação
+
+  var pago = totalPago.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+
+  var troco = totalPago-totalaPagar;
+  console.log(totalaPagar);
+  console.log(totalPago);
+  console.log(troco);
+
+  document.getElementById("troco").value = troco;
+
+}
+
+
+
+
+
+
+
+
  
 function adicionando(){
 
@@ -57,7 +89,7 @@ function adicionando(){
       
   totalTudo = totalTudo + total_bruto;
 
-  document.getElementById("totalLiquido").value = totalTudo.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });;
+  document.getElementById("totalLiquido").value = totalTudo;//toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });;
 
 
     
@@ -124,12 +156,6 @@ function adicionando(){
     document.body.insertBefore(divNova, divAtual);
  
   
-
-
-
-
-
-
 
 
 
