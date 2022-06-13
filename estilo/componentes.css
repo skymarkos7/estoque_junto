@@ -1,3 +1,6 @@
+body{
+    overflow: hidden;
+}
 #conteudo {
     margin: 0 auto;
     display: flex;
@@ -289,20 +292,37 @@ input:checked+.slider:before {
     float: left;
 }
 
-.quantidade_item_pdv input,
+
 .descrição_item_pdv span {
+    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%) !important;
+    border: 0;
+    outline: none;
+    text-align: right;
+    color: #fff;
+    height: 35px;
+    /* border-radius: 12px; */    
+    font-size: 13.5px;
+    line-height: 35px;
+    width: 450px;
+    text-transform: uppercase;
+}
+
+
+
+
+.quantidade_item_pdv input{
     background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%) !important;
     border: 0;
     outline: none;
     text-align: center;
     color: #fff;
-    height: 80px;
-    border-radius: 12px;
-    width: 200%;
-    font-size: 25px;
+    height: 35px;
+    /* border-radius: 12px; */
+    width: 100%;
+    font-size: 15px;
+    
     text-transform: uppercase;
 }
-
 
 /*
 .select2-dropdown--below {
@@ -444,25 +464,44 @@ input:checked+.slider:before {
 }
 
 .qtde_input {
-    width: 50px;
+    width: 20px;
 }
 
 .tres_quadros {
-    margin-top: 20px;
-    height: 130px;
-    background-color: #eee;
+    
+    height: 30px;
+    /* background-color: rgb(250, 0, 0); */
     float: left;
     width: 100%;
 }
 
+.tres_quadros p{
+    background-color: #043e6d;
+    color:#fff;
+    margin-left: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 13px;
+    float: left;
+    width: 22%;
+    line-height: 30px;
+    height: 30px;
+    cursor:pointer;
+    /* border: 1px solid red; */
+   
+
+}
+
 .quadro_atalhos1,
-.quadro_atalhos2,
-.quadro_funcoes {
+.quadro_atalhos2{
     margin-left: 5px;
     float: left;
     background-color: #232F7F;
     height: 125px;
 }
+
+
+
 
 .quadro_atalhos1 {
     width: 29%;
@@ -474,10 +513,7 @@ input:checked+.slider:before {
     border-radius: 10px;
 }
 
-.quadro_funcoes {
-    width: 29%;
-    background-color: #fff;
-}
+
 
 .quadro_funcoes p {
     text-align: center;
@@ -504,6 +540,7 @@ input:checked+.slider:before {
 
 .lista_itens_pdv {
     border: 1px solid #000;
+    margin-top: -100px;
     width: 98%;
     height: 300px;
     float: left;
@@ -519,7 +556,7 @@ input:checked+.slider:before {
     border-color: #ccc;
     width: 100%;
     height: 50px;
-    font-size: 20px;
+    font-size: 10px;
 }
 
 .total_pago_pdv {
