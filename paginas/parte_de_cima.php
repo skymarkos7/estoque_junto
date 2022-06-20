@@ -242,9 +242,41 @@ session_start(); //inicia uma sessão
                                     </a>
                                 </li>
                         </li>
+
+
+
                         
                         </ul>
                         </li>
+
+
+
+                        <li>
+                            <a id="seleciona_financeiro" href="..\paginas\financeiro.php">
+                                <i class="metismenu-icon pe-7s-diamond">
+                                    <i class="metismenu-icon pe-7s-car">
+                                        <img src="../img/icone/cash-multiple.png" alt="">
+                                    </i>
+                                </i>
+                                Financeiro
+                                <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a id="seleciona_historico_vendas" href="cadastrar_financeiro.php">
+                                        <i class="metismenu-icon">
+                                        </i>Novo
+                                        <img src="../img/icone/plus-circle-outline.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+
+
+
+
                         <li>
                             <a id="seleciona_relatorios" href="..\paginas\relatorios.php">
                                 <i class="metismenu-icon pe-7s-diamond">

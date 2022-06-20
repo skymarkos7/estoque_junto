@@ -158,11 +158,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
             <input type="number" value="1" id="qtde_prod" name="quantidade_item_pdv">
         </div>
 
-        <!-- <?php
-                // $o = 0;       // 1 - iniciando a variável    
-                // $e = 0;
-                // $a = 0;
-                ?> -->
+       
 
         <?php if (($produtonome) and ($produtonome->num_rows != 0)) : ?>
             <div onchange="captura_dados()" class="descrição_item_pdv">
