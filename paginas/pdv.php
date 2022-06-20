@@ -155,7 +155,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
         <div class="quantidade_item_pdv">
             <p>Qtd</p>
-            <input type="text" value="1" id="qtde_prod" name="quantidade_item_pdv">
+            <input type="number" value="1" id="qtde_prod" name="quantidade_item_pdv">
         </div>
 
         <!-- <?php
@@ -270,13 +270,12 @@ $resultado_produto = mysqli_query($conn, $result_produto);
 
             </div>
 
-            <div class="tres_quadros">
-
-             
-                    <p onclick="adicionando()">Add Produto</p>
-                    <p>Limpar Produto</p>
-                    <p>Cancelar</p>
+            <div class="tres_quadros">        
+                    
                     <p>Finalizar Venda</p>
+                    <p>Limpar Produto</p>
+                    <p>Cancelar</p>                    
+                    <p onclick="adicionando()">Add Produto</p>
               
             </div>
         </div>
@@ -311,7 +310,7 @@ $resultado_produto = mysqli_query($conn, $result_produto);
             </div>
 
             <div class="total_liquido_pdv">
-                <p><b>Total a pagar</b></p> <input placeholder="0,00" id="totalLiquido" value="" class="qtde_input alinhamento" type="text" name="total_liquido">
+                <p><b>Total a pagar</b></p> <input style="font-size: 30px; color:#3EA95B;"  placeholder="0,00" id="totalLiquido" value="" class="qtde_input alinhamento" type="text" name="total_liquido">
             </div>
 
             <div onkeyup="troco()" class="total_pago_pdv">
