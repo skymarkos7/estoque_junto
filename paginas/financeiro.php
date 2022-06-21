@@ -18,12 +18,6 @@ Esta é a página do financeiro
 
 
 
-
-
-
-
-
-
 <!-------------- inicio - inclue a parte de baixo da página ------------>
 <?php
 include_once("parte_de_baixo.php"); //inclui o rodapé da página que será apresentada
