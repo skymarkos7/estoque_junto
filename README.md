@@ -32,7 +32,7 @@ Para acompanhar visualmente consulte o resultado hospedado a baixo:
 ======================================================
 
 
-## Construcao do banco
+## Construção do banco
  
 ## PDV - ponto de venda
 ### OQUE CONTÉM:
